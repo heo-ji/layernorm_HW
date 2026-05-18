@@ -1,0 +1,313 @@
+
+*** Running vivado
+    with args -log axis_slave_vip_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_slave_vip_0.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed May 13 10:22:49 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source axis_slave_vip_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1471.695 ; gain = 0.023 ; free physical = 2930 ; free virtual = 6293
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/Study/source/2026/Add_Norm_AXI/ADD_NORM_AXI.srcs/layernorm_axi_wrapper_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/linuxusr/tools/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: axis_slave_vip_0
+Command: synth_design -top axis_slave_vip_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 314738
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1978.996 ; gain = 420.797 ; free physical = 2224 ; free virtual = 5587
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axis_slave_vip_0' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/axis_slave_vip_0/synth/axis_slave_vip_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'axi4stream_vip_v1_1_19_top' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/axis_slave_vip_0/hdl/axi4stream_vip_v1_1_vlsyn_rfs.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'axi4stream_vip_v1_1_19_top' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/axis_slave_vip_0/hdl/axi4stream_vip_v1_1_vlsyn_rfs.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'axis_slave_vip_0' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/axis_slave_vip_0/synth/axis_slave_vip_0.sv:53]
+WARNING: [Synth 8-7129] Port aclk in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tvalid in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[511] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[510] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[509] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[508] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[507] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[506] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[505] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[504] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[503] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[502] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[501] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[500] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[499] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[498] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[497] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[496] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[495] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[494] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[493] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[492] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[491] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[490] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[489] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[488] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[487] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[486] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[485] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[484] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[483] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[482] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[481] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[480] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[479] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[478] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[477] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[476] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[475] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[474] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[473] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[472] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[471] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[470] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[469] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[468] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[467] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[466] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[465] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[464] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[463] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[462] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[461] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[460] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[459] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[458] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[457] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[456] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[455] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[454] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[453] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[452] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[451] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[450] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[449] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[448] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[447] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[446] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[445] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[444] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[443] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[442] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[441] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[440] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[439] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[438] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[437] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[436] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[435] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[434] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[433] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[432] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[431] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[430] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[429] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[428] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[427] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[426] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[425] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[424] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[423] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[422] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[421] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[420] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[419] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[418] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[417] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdata[416] in module axi4stream_vip_v1_1_19_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2050.934 ; gain = 492.734 ; free physical = 2145 ; free virtual = 5509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2068.746 ; gain = 510.547 ; free physical = 2135 ; free virtual = 5499
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2068.746 ; gain = 510.547 ; free physical = 2135 ; free virtual = 5499
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2068.746 ; gain = 0.000 ; free physical = 2135 ; free virtual = 5498
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+WARNING: [Designutils 20-1758] instance inst wraps a black box. Constraint reading is skipped for elaborated designs in this case. Skipping constraint file '/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/axis_slave_vip_0/axis_slave_vip_0_ooc.xdc'.
+Parsing XDC File [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/axis_slave_vip_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/axis_slave_vip_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2141.684 ; gain = 0.000 ; free physical = 2126 ; free virtual = 5489
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2141.684 ; gain = 0.000 ; free physical = 2126 ; free virtual = 5489
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2141.684 ; gain = 583.484 ; free physical = 2128 ; free virtual = 5491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2149.688 ; gain = 591.488 ; free physical = 2128 ; free virtual = 5491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/axis_slave_vip_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2149.688 ; gain = 591.488 ; free physical = 2127 ; free virtual = 5491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2149.688 ; gain = 591.488 ; free physical = 2127 ; free virtual = 5490
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2149.688 ; gain = 591.488 ; free physical = 2128 ; free virtual = 5492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 2230.688 ; gain = 672.488 ; free physical = 2039 ; free virtual = 5403
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 2230.688 ; gain = 672.488 ; free physical = 2039 ; free virtual = 5403
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 2240.703 ; gain = 682.504 ; free physical = 2033 ; free virtual = 5396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2402.516 ; gain = 844.316 ; free physical = 1864 ; free virtual = 5228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2402.516 ; gain = 844.316 ; free physical = 1865 ; free virtual = 5228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2402.516 ; gain = 844.316 ; free physical = 1865 ; free virtual = 5228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2402.516 ; gain = 844.316 ; free physical = 1865 ; free virtual = 5228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2402.516 ; gain = 844.316 ; free physical = 1878 ; free virtual = 5241
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2402.516 ; gain = 844.316 ; free physical = 1878 ; free virtual = 5241
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2402.516 ; gain = 844.316 ; free physical = 1878 ; free virtual = 5241
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 650 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.516 ; gain = 771.379 ; free physical = 1877 ; free virtual = 5241
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 2402.523 ; gain = 844.316 ; free physical = 1877 ; free virtual = 5241
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2402.523 ; gain = 0.000 ; free physical = 2039 ; free virtual = 5402
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2402.523 ; gain = 0.000 ; free physical = 2046 ; free virtual = 5409
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 320eb1f4
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 2402.523 ; gain = 930.828 ; free physical = 2045 ; free virtual = 5409
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1779.093; main = 1612.794; forked = 271.240
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3245.680; main = 2402.516; forked = 910.977
+INFO: [Common 17-1381] The checkpoint '/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/axis_slave_vip_0_synth_1/axis_slave_vip_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axis_slave_vip_0, cache-ID = bcb16e05b2c484d8
+INFO: [Common 17-1381] The checkpoint '/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/axis_slave_vip_0_synth_1/axis_slave_vip_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file axis_slave_vip_0_utilization_synth.rpt -pb axis_slave_vip_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 10:24:17 2026...

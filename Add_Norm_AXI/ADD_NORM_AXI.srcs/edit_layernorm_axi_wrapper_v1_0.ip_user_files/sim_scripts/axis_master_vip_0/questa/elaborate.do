@@ -1,0 +1,1 @@
+vopt -64 -l elaborate.log +acc=npr -suppress 10016  -L xil_defaultlib -L xilinx_vip -L axis_infrastructure_v1_1_1 -L axi4stream_vip_v1_1_19 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.axis_master_vip_0 xil_defaultlib.glbl -o axis_master_vip_0_opt

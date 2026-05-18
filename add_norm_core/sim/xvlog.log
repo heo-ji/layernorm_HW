@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/comparator.v" into library work
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/invsqrt_LUT.v" into library work
+INFO: [VRFC 10-311] analyzing module invsqrt_LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/invsqrt.v" into library work
+INFO: [VRFC 10-311] analyzing module invsqrt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/accum_one_row.v" into library work
+INFO: [VRFC 10-311] analyzing module accum_one_row
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/mean.v" into library work
+INFO: [VRFC 10-311] analyzing module mean
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/var.v" into library work
+INFO: [VRFC 10-311] analyzing module var
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/normalization.v" into library work
+INFO: [VRFC 10-311] analyzing module normalization
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/calculator_one_row.v" into library work
+INFO: [VRFC 10-311] analyzing module calculator_one_row
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/top/top_calculator_one_row.v" into library work
+INFO: [VRFC 10-311] analyzing module top_calculator_one_row
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/top/top_normalization.v" into library work
+INFO: [VRFC 10-311] analyzing module top_normalization
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/add_norm_core/sim/testbench/add_norm_tb.v" into library work
+INFO: [VRFC 10-311] analyzing module add_norm_tb

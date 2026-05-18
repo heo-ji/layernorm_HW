@@ -1,0 +1,2 @@
+ERROR: [XSIM 43-4307] Invalid entry in the project file, expecting a file name but specified path '../../../../edit_layernorm_axi_wrapper_v1_0.ip_user_files/ipstatic/hdl' represents a directory name.
+ERROR: [XSIM 43-3217] tb_layernorm_axi_wrapper_vlog.prj (line 11): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.

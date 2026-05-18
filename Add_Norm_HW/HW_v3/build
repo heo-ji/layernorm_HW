@@ -1,0 +1,3 @@
+xvlog -f ./design_list.f -f ./testbench_list.f  
+xelab tb_overflow -debug wave -s  tb_overflow
+xsim tb_overflow -gui -wdb simulatetb_accum.wdb -tclbatch kim_sim.tcl -log simulate.log

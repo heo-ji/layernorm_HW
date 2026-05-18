@@ -1,0 +1,12 @@
+
+{ 
+    crc :  1808568189584360526  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axis_infrastructure_v1_1_1 -L axi4stream_vip_v1_1_19 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_19 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_layernorm_axi_wrapper_behav xil_defaultlib.tb_layernorm_axi_wrapper xil_defaultlib.glbl" , 
+    buildDate : "Nov  8 2024" , 
+    buildTime : "22:36:55" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/tb_layernorm_axi_wrapper_behav/xsimk\"   \"xsim.dir/tb_layernorm_axi_wrapper_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/tb_layernorm_axi_wrapper_behav/obj/xsim_1.lnx64.o\" \"xsim.dir/tb_layernorm_axi_wrapper_behav/obj/xsim_2.lnx64.o\" \"xsim.dir/tb_layernorm_axi_wrapper_behav/obj/xsim_3.lnx64.o\" \"xsim.dir/tb_layernorm_axi_wrapper_behav/obj/xsim_4.lnx64.o\" \"xsim.dir/tb_layernorm_axi_wrapper_behav/obj/xsim_5.lnx64.o\" \"xsim.dir/tb_layernorm_axi_wrapper_behav/obj/xsim_6.lnx64.o\" \"xsim.dir/tb_layernorm_axi_wrapper_behav/obj/xsim_7.lnx64.o\" \"xsim.dir/tb_layernorm_axi_wrapper_behav/obj/xsim_8.lnx64.o\" -L\"/home/linuxusr/tools/Vivado/2024.2/lib/lnx64.o\" -lxv_simulator_kernel    -L/home/linuxusr/tools/Vivado/2024.2/lib/lnx64.o/../../tps/lnx64/gcc-9.3.0/bin/../lib64 -Wl,--disable-new-dtags -Wl,-rpath=/home/linuxusr/tools/Vivado/2024.2/lib/lnx64.o/../../tps/lnx64/gcc-9.3.0/bin/../lib64 -lxv_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

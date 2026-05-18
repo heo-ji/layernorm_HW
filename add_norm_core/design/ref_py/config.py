@@ -1,0 +1,10 @@
+# config.py
+
+NUM_ROWS   = 32
+D_MODEL    = 768
+DATA_WIDTH = 16
+
+
+#fortest
+VAR_TARGET_MIN = 0.001
+VAR_TARGET_MAX = 0.003

@@ -1,0 +1,1 @@
+"add_norm_tb" -debug "wave" -s "add_norm_tb" 

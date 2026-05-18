@@ -1,0 +1,3 @@
+axi_lite_master_vip_0_pkg.sv,systemverilog,xil_defaultlib,../../../../layernorm_axi_wrapper_1_0/src/axi_lite_master_vip_0/sim/axi_lite_master_vip_0_pkg.sv,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+axi_lite_master_vip_0.sv,systemverilog,xil_defaultlib,../../../../layernorm_axi_wrapper_1_0/src/axi_lite_master_vip_0/sim/axi_lite_master_vip_0.sv,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

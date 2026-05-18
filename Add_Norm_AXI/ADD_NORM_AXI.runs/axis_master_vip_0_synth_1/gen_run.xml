@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="axis_master_vip_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1778635238">
+  <File Type="VDS-TIMING-PB" Name="axis_master_vip_0_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="axis_master_vip_0_timing_summary_synth.rpt"/>
+  <File Type="RDS-RDS" Name="axis_master_vip_0.vds"/>
+  <File Type="REPORTS-TCL" Name="axis_master_vip_0_reports.tcl"/>
+  <File Type="PA-TCL" Name="axis_master_vip_0.tcl"/>
+  <File Type="RDS-DCP" Name="axis_master_vip_0.dcp"/>
+  <File Type="RDS-PROPCONSTRS" Name="axis_master_vip_0_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="axis_master_vip_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="axis_master_vip_0_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axis_master_vip_0" RelGenDir="$PGENDIR/axis_master_vip_0">
+    <File Path="$PSRCDIR/sources_1/ip/axis_master_vip_0/axis_master_vip_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axis_master_vip_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axis_master_vip_0" RelGenDir="$PGENDIR/axis_master_vip_0">
+    <File Path="$PSRCDIR/sources_1/ip/axis_master_vip_0/axis_master_vip_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axis_master_vip_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

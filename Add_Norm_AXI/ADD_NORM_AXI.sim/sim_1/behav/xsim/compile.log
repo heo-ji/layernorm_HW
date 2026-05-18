@@ -1,0 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/accum_one_row.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accum_one_row
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_one_row
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/invsqrt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module invsqrt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/invsqrt_LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module invsqrt_LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/mean.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mean
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/normalization.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module normalization
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/top_calculator_one_row.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_calculator_one_row
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/top_normalization.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_normalization
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/var.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module var
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layernorm_axi_wrapper
+WARNING: [VRFC 10-2938] 'w_pl_status' is already implicitly declared on line 123 [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper.v:189]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/sim/layernorm_axi_wrapper_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module layernorm_axi_wrapper_0

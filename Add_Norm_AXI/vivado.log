@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed May 13 10:08:17 2026
+# Process ID         : 308718
+# Current directory  : /mnt/c/Study/Source/2026/Add_Norm_AXI
+# Command line       : vivado .
+# Log file           : /mnt/c/Study/Source/2026/Add_Norm_AXI/vivado.log
+# Journal file       : /mnt/c/Study/Source/2026/Add_Norm_AXI/vivado.jou
+# Running On         : jhnotebook
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.4 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-1260P
+# CPU Frequency      : 2496.009 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 8166 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 10314 MB
+# Available Virtual  : 6047 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/linuxusr/tools/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/linuxusr/tools/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/linuxusr/tools/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 10:08:49 2026...

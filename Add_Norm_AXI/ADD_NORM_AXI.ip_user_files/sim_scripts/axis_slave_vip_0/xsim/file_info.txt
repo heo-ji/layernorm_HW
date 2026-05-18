@@ -1,0 +1,3 @@
+axis_slave_vip_0_pkg.sv,systemverilog,xil_defaultlib,../../../../ADD_NORM_AXI.gen/sources_1/ip/axis_slave_vip_0/sim/axis_slave_vip_0_pkg.sv,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+axis_slave_vip_0.sv,systemverilog,xil_defaultlib,../../../../ADD_NORM_AXI.gen/sources_1/ip/axis_slave_vip_0/sim/axis_slave_vip_0.sv,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

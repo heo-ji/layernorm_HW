@@ -1,0 +1,15 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:55
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/accum_one_row.v,1776065808,verilog,,/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/mean.v,,accum_one_row,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/calculator_one_row.v,1776065808,verilog,,/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/top/top_calculator_one_row.v,,calculator_one_row,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/comparator.v,1776065808,verilog,,/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/invsqrt_LUT.v,,comparator,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/invsqrt.v,1776065808,verilog,,/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/accum_one_row.v,,invsqrt,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/invsqrt_LUT.v,1776065808,verilog,,/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/invsqrt.v,,invsqrt_LUT,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/mean.v,1776065808,verilog,,/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/var.v,,mean,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/normalization.v,1777964608,verilog,,/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/calculator_one_row.v,,normalization,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/top/top_calculator_one_row.v,1776065810,verilog,,/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/top/top_normalization.v,,top_calculator_one_row,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/top/top_normalization.v,1776065810,verilog,,/mnt/c/Study/Source/2026/add_norm_core/sim/testbench/add_norm_tb.v,,top_normalization,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/var.v,1776065808,verilog,,/mnt/c/Study/Source/2026/add_norm_core/design/rtl_v/HW_v2_Modules_sync_reset/normalization.v,,var,,,,,,,,
+/mnt/c/Study/Source/2026/add_norm_core/sim/testbench/add_norm_tb.v,1778046632,verilog,,,,add_norm_tb,,,,,,,,

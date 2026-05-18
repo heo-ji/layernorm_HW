@@ -1,0 +1,25 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/linuxusr/tools/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab add_norm_tb -debug wave -s add_norm_tb 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.accum_one_row
+Compiling module work.mean
+Compiling module work.var
+Compiling module work.comparator
+Compiling module work.invsqrt_LUT
+Compiling module work.invsqrt
+Compiling module work.calculator_one_row
+Compiling module work.top_calculator_one_row_default
+Compiling module work.normalization
+Compiling module work.top_normalization_default
+Compiling module work.add_norm_tb
+WARNING: [XSIM 43-3373] "/mnt/c/Study/Source/2026/add_norm_core/sim/testbench/add_norm_tb.v" Line 371. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "/mnt/c/Study/Source/2026/add_norm_core/sim/testbench/add_norm_tb.v" Line 396. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Built simulation snapshot add_norm_tb

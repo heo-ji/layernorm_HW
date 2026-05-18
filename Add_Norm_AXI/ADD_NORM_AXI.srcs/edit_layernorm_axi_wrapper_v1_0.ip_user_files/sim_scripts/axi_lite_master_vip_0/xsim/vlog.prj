@@ -1,0 +1,8 @@
+sv xil_defaultlib --include "/home/linuxusr/tools/Vivado/2024.2/data/xilinx_vip/include" --include "../../../ipstatic/hdl" \
+"../../../../layernorm_axi_wrapper_1_0/src/axi_lite_master_vip_0/sim/axi_lite_master_vip_0_pkg.sv" \
+"../../../../layernorm_axi_wrapper_1_0/src/axi_lite_master_vip_0/sim/axi_lite_master_vip_0.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

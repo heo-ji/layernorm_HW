@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="axis_slave_vip_0_synth_1" LaunchDir="/mnt/c/Study/source/2026/Add_Norm_AXI/ADD_NORM_AXI.srcs/edit_layernorm_axi_wrapper_v1_0.runs/axis_slave_vip_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axis_master_vip_0_synth_1" LaunchDir="/mnt/c/Study/source/2026/Add_Norm_AXI/ADD_NORM_AXI.srcs/edit_layernorm_axi_wrapper_v1_0.runs/axis_master_vip_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_lite_master_vip_0_synth_1" LaunchDir="/mnt/c/Study/source/2026/Add_Norm_AXI/ADD_NORM_AXI.srcs/edit_layernorm_axi_wrapper_v1_0.runs/axi_lite_master_vip_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.ignorePathLengthChecks" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

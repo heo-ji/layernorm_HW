@@ -1,0 +1,1222 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed May 13 13:44:02 2026
+# Process ID         : 376525
+# Current directory  : /mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/layernorm_axi_wrapper_0_synth_1
+# Command line       : vivado -log layernorm_axi_wrapper_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source layernorm_axi_wrapper_0.tcl
+# Log file           : /mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/layernorm_axi_wrapper_0_synth_1/layernorm_axi_wrapper_0.vds
+# Journal file       : /mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/layernorm_axi_wrapper_0_synth_1/vivado.jou
+# Running On         : jhnotebook
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.4 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-1260P
+# CPU Frequency      : 2496.009 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 8166 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 10314 MB
+# Available Virtual  : 6551 MB
+#-----------------------------------------------------------
+source layernorm_axi_wrapper_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/Study/source/2026/Add_Norm_AXI/ADD_NORM_AXI.srcs/layernorm_axi_wrapper_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/linuxusr/tools/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: layernorm_axi_wrapper_0
+Command: synth_design -top layernorm_axi_wrapper_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 376657
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1978.648 ; gain = 419.828 ; free physical = 1624 ; free virtual = 5148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'w_pl_status', assumed default net type 'wire' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper.v:123]
+WARNING: [Synth 8-8895] 'w_pl_status' is already implicitly declared on line 123 [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper.v:189]
+INFO: [Synth 8-6157] synthesizing module 'layernorm_axi_wrapper_0' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/synth/layernorm_axi_wrapper_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'layernorm_axi_wrapper' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper.v:10]
+INFO: [Synth 8-6157] synthesizing module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI.v:158]
+INFO: [Synth 8-155] case statement is not full and has no default [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI.v:294]
+INFO: [Synth 8-6155] done synthesizing module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'top_calculator_one_row' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/top_calculator_one_row.v:24]
+INFO: [Synth 8-6157] synthesizing module 'calculator_one_row' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:133]
+INFO: [Synth 8-6157] synthesizing module 'accum_one_row' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/accum_one_row.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'accum_one_row' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/accum_one_row.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mean' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/mean.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mean' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/mean.v:3]
+INFO: [Synth 8-6157] synthesizing module 'var' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/var.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'var' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/var.v:4]
+INFO: [Synth 8-6157] synthesizing module 'invsqrt' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/invsqrt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'invsqrt_LUT' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/invsqrt_LUT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/comparator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/comparator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'invsqrt_LUT' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/invsqrt_LUT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/invsqrt.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'invsqrt' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/invsqrt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'calculator_one_row' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_calculator_one_row' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/top_calculator_one_row.v:24]
+INFO: [Synth 8-6157] synthesizing module 'top_normalization' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/top_normalization.v:3]
+INFO: [Synth 8-6157] synthesizing module 'normalization' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/normalization.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'normalization' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/normalization.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_normalization' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/top_normalization.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'layernorm_axi_wrapper' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/hdl/layernorm_axi_wrapper.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'layernorm_axi_wrapper_0' (0#1) [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/synth/layernorm_axi_wrapper_0.v:53]
+WARNING: [Synth 8-7129] Port i_m_ready in module normalization is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_squared_mean[31] in module var is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_squared_mean[30] in module var is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_squared_mean[29] in module var is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_squared_mean[28] in module var is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_squared_mean[27] in module var is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_squared_mean[26] in module var is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_squared_mean[25] in module var is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_squared_mean[24] in module var is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_aclk in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_aresetn in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[63] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[62] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[61] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[60] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[59] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[58] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[57] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[56] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[55] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[54] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[53] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[52] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[51] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[50] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[49] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[48] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[47] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[46] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[45] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[44] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[43] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[42] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[41] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[40] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[39] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[38] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[37] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[36] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[35] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[34] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[33] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[32] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[31] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[30] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[29] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[28] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[27] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[26] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[25] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[24] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[23] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[22] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[21] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[20] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[19] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[18] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[17] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[16] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[15] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[14] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[13] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[12] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[11] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[10] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[9] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[8] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[7] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[6] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[5] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[4] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[3] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[2] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aclk in module layernorm_axi_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aresetn in module layernorm_axi_wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2057.617 ; gain = 498.797 ; free physical = 1533 ; free virtual = 5058
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2075.430 ; gain = 516.609 ; free physical = 1525 ; free virtual = 5050
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2075.430 ; gain = 516.609 ; free physical = 1525 ; free virtual = 5050
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2075.430 ; gain = 0.000 ; free physical = 1525 ; free virtual = 5051
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2225.180 ; gain = 0.000 ; free physical = 1434 ; free virtual = 4975
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.7 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2225.180 ; gain = 0.000 ; free physical = 1422 ; free virtual = 4963
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2225.180 ; gain = 666.359 ; free physical = 1422 ; free virtual = 4963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2233.184 ; gain = 674.363 ; free physical = 1422 ; free virtual = 4963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2233.184 ; gain = 674.363 ; free physical = 1422 ; free virtual = 4963
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'invsqrt'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'calculator_one_row'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'layernorm_axi_wrapper'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                CALC_LUT |                              010 |                               01
+            CALC_INVSQRT |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'one-hot' in module 'invsqrt'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+              CALC_ACCUM |                           000010 |                              001
+               CALC_MEAN |                           000100 |                              010
+                CALC_VAR |                           001000 |                              011
+            CALC_INVSQRT |                           010000 |                              100
+                    DONE |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'one-hot' in module 'calculator_one_row'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                   ITER1 |                            10000 |                              001
+                   STORE |                            01000 |                              010
+              WAIT_ITER2 |                            00100 |                              011
+                   ITER2 |                            00010 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'one-hot' in module 'layernorm_axi_wrapper'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 2233.184 ; gain = 674.363 ; free physical = 1426 ; free virtual = 4968
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 32    
+	   2 Input   24 Bit       Adders := 32    
+	   2 Input   16 Bit       Adders := 32    
+	   3 Input   16 Bit       Adders := 32    
+	   2 Input   11 Bit       Adders := 32    
++---Registers : 
+	              512 Bit    Registers := 2     
+	               32 Bit    Registers := 37    
+	               24 Bit    Registers := 64    
+	               16 Bit    Registers := 256   
+	               11 Bit    Registers := 32    
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 261   
++---Multipliers : 
+	               8x34  Multipliers := 32    
+	               8x32  Multipliers := 32    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   6 Input   32 Bit        Muxes := 5     
+	   2 Input   16 Bit        Muxes := 192   
+	   4 Input   16 Bit        Muxes := 32    
+	   6 Input    6 Bit        Muxes := 32    
+	   2 Input    6 Bit        Muxes := 64    
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 32    
+	   2 Input    3 Bit        Muxes := 65    
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 165   
+	   3 Input    1 Bit        Muxes := 142   
+	   6 Input    1 Bit        Muxes := 32    
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP w_squared_data, operation Mode is: A*B.
+DSP Report: operator w_squared_data is absorbed into DSP w_squared_data.
+DSP Report: Generating DSP o_mean_reg, operation Mode is: (A*B)'.
+DSP Report: register o_mean_reg is absorbed into DSP o_mean_reg.
+DSP Report: operator w_mean is absorbed into DSP o_mean_reg.
+DSP Report: Generating DSP w_squared_mean, operation Mode is: A*B.
+DSP Report: operator w_squared_mean is absorbed into DSP w_squared_mean.
+DSP Report: operator w_squared_mean is absorbed into DSP w_squared_mean.
+DSP Report: Generating DSP o_squared_mean_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register o_squared_mean_reg is absorbed into DSP o_squared_mean_reg.
+DSP Report: operator w_squared_mean is absorbed into DSP o_squared_mean_reg.
+DSP Report: operator w_squared_mean is absorbed into DSP o_squared_mean_reg.
+DSP Report: Generating DSP r_mul_reg, operation Mode is: (A2*B2)'.
+DSP Report: register u_invsqrt_LUT/out_slope_reg is absorbed into DSP r_mul_reg.
+DSP Report: register r_var_reg is absorbed into DSP r_mul_reg.
+DSP Report: register r_mul_reg is absorbed into DSP r_mul_reg.
+DSP Report: operator r_mul0 is absorbed into DSP r_mul_reg.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is: (C-A*B)'.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+DSP Report: Generating DSP w_multiply_invsqrt, operation Mode is: A*B.
+DSP Report: operator w_multiply_invsqrt is absorbed into DSP w_multiply_invsqrt.
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[63] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[62] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[61] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[60] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[59] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[58] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[57] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[56] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[55] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[54] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[53] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[52] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[51] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[50] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[49] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[48] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[47] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[46] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[45] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[44] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[43] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[42] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[41] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[40] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[39] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[38] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[37] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[36] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[35] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[34] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[33] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[32] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[31] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[30] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[29] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[28] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[27] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[26] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[25] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[24] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[23] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[22] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[21] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[20] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[19] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[18] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[17] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[16] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[15] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[14] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[13] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[12] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[11] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[10] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[9] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[8] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[7] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[6] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[5] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[4] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design layernorm_axi_wrapper_0 has port m00_axis_tstrb[0] driven by constant 1
+WARNING: [Synth 8-7129] Port s00_axis_aclk in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_aresetn in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[63] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[62] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[61] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[60] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[59] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[58] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[57] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[56] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[55] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[54] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[53] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[52] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[51] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[50] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[49] in module layernorm_axi_wrapper_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[47]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[46]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[45]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[44]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[43]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[42]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[41]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[40]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[39]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[38]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[37]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[36]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[35]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[34]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[33]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[32]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[31]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[30]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[29]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[28]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[27]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[26]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[25]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[24]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[23]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[22]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[21]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[20]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[19]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[18]) is unused and will be removed from module calculator_one_row.
+WARNING: [Synth 8-3332] Sequential element (u_mean/o_squared_mean_reg[17]) is unused and will be removed from module calculator_one_row.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 2233.184 ; gain = 674.363 ; free physical = 1421 ; free virtual = 4965
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 224, Available = 220. Use report_utilization command for details.
+ Sort Area is calculator_one_row w_squared_mean_4 : 0 0 : 1424 2831 : Used 32 time 0
+ Sort Area is calculator_one_row w_squared_mean_4 : 0 1 : 1407 2831 : Used 32 time 0
+ Sort Area is calculator_one_row r_mul_reg_7 : 0 0 : 2758 2758 : Used 32 time 0
+ Sort Area is calculator_one_row u_var/o_var_reg_9 : 0 0 : 2127 2127 : Used 32 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_10 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_11 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_12 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_13 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_14 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_15 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_16 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_17 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_18 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_19 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1a : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1b : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1c : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1d : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1e : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1f : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_20 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_21 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_22 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_23 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_24 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_25 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_26 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_27 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_28 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_29 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_2a : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_b : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_c : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_d : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_e : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_f : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is calculator_one_row w_squared_data_0 : 0 0 : 1937 1937 : Used 32 time 0
+ Sort Area is calculator_one_row o_mean_reg_2 : 0 0 : 1201 1201 : Used 32 time 0
+ DSP resource Status: w_squared_data_0 0 1937 1937: Used 32 time : Accepted (192 < 220) uniquify 0 
+ DSP resource Status: o_mean_reg_2 0 1201 1201: Used 32 time : Rejected (224 > 220) uniquify 4 
+DSP Report: Generating DSP w_squared_data, operation Mode is (post resource management): A*B.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP w_squared_data.
+DSP Report: Generating DSP o_mean_reg, operation Mode is (post resource management): (A*B)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP o_mean_reg.
+DSP Report: operator u_mean/w_mean is absorbed into DSP o_mean_reg.
+DSP Report: Generating DSP w_squared_mean, operation Mode is (post resource management): A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP w_squared_mean.
+DSP Report: Generating DSP r_mul_reg, operation Mode is (post resource management): (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP r_mul_reg.
+DSP Report: Generating DSP o_squared_mean_reg, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP o_squared_mean_reg.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is (post resource management): (C-A*B)'.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP w_squared_data, operation Mode is (post resource management): A*B.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP w_squared_data.
+DSP Report: Generating DSP o_mean_reg, operation Mode is (post resource management): (A*B)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP o_mean_reg.
+DSP Report: operator u_mean/w_mean is absorbed into DSP o_mean_reg.
+DSP Report: Generating DSP w_squared_mean, operation Mode is (post resource management): A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP w_squared_mean.
+DSP Report: Generating DSP r_mul_reg, operation Mode is (post resource management): (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP r_mul_reg.
+DSP Report: Generating DSP o_squared_mean_reg, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP o_squared_mean_reg.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is (post resource management): (C-A*B)'.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+ Sort Area is calculator_one_row w_squared_mean_2d : 0 0 : 1424 2831 : Used 28 time 0
+ Sort Area is calculator_one_row w_squared_mean_2d : 0 1 : 1407 2831 : Used 28 time 0
+ Sort Area is calculator_one_row__1 w_squared_mean_32 : 1 0 : 1424 2831 : Used 4 time 0
+ Sort Area is calculator_one_row__1 w_squared_mean_32 : 1 1 : 1407 2831 : Used 4 time 0
+ Sort Area is calculator_one_row r_mul_reg_2e : 0 0 : 2758 2758 : Used 28 time 0
+ Sort Area is calculator_one_row__1 r_mul_reg_33 : 1 0 : 2758 2758 : Used 4 time 0
+ Sort Area is calculator_one_row u_var/o_var_reg_2f : 0 0 : 2127 2127 : Used 28 time 0
+ Sort Area is calculator_one_row__1 u_var/o_var_reg_34 : 1 0 : 2127 2127 : Used 4 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_10 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_11 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_12 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_13 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_14 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_15 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_16 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_17 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_18 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_19 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1a : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1b : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1c : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1d : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1e : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_1f : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_20 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_21 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_22 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_23 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_24 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_25 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_26 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_27 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_28 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_29 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_2a : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_b : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_c : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_d : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_e : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is layernorm_axi_wrapper__GC0 w_multiply_invsqrt_f : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is calculator_one_row w_squared_data_2b : 0 0 : 1937 1937 : Used 28 time 0
+ Sort Area is calculator_one_row__1 w_squared_data_30 : 1 0 : 1937 1937 : Used 4 time 0
+ Sort Area is calculator_one_row o_mean_reg_2c : 0 0 : 1201 1201 : Used 28 time 0
+ Sort Area is calculator_one_row__1 o_mean_reg_31 : 1 0 : 1201 1201 : Used 4 time 0
+ DSP resource Status: w_squared_data_2b 0 1937 1937: Used 28 time : Accepted (188 < 220) uniquify 0 
+ DSP resource Status: o_mean_reg_2c 0 1201 1201: Used 28 time : Accepted (220 < 220) uniquify 0 
+ DSP resource Status: w_squared_mean_2d 0 2831 1424: Used 28 time : Accepted (28 < 220) uniquify 0 
+ DSP resource Status: r_mul_reg_2e 0 2758 2758: Used 28 time : Accepted (92 < 220) uniquify 0 
+ DSP resource Status: w_squared_mean_2d 1 2831 1407: Used 28 time : Accepted (56 < 220) uniquify 0 
+ DSP resource Status: u_var/o_var_reg_2f 0 2127 2127: Used 28 time : Accepted (124 < 220) uniquify 0 
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is (post resource management): A*B.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/o_mean_reg, operation Mode is (post resource management): (A*B)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_mean/o_mean_reg.
+DSP Report: operator u_mean/w_mean is absorbed into DSP u_mean/o_mean_reg.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is (post resource management): A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is (post resource management): (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is (post resource management): (C-A*B)'.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+ DSP resource Status: w_squared_data_30 0 1937 1937: Used 4 time : Accepted (192 < 220) uniquify 0 
+ DSP resource Status: o_mean_reg_31 0 1201 1201: Used 4 time : Rejected (224 > 220) uniquify 0 
+ DSP resource Status: w_squared_mean_32 0 2831 1424: Used 4 time : Accepted (60 < 220) uniquify 0 
+ DSP resource Status: r_mul_reg_33 0 2758 2758: Used 4 time : Accepted (96 < 220) uniquify 0 
+ DSP resource Status: w_squared_mean_32 1 2831 1407: Used 4 time : Accepted (64 < 220) uniquify 0 
+ DSP resource Status: u_var/o_var_reg_34 0 2127 2127: Used 4 time : Accepted (128 < 220) uniquify 0 
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is (post resource management): A*B.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is (post resource management): A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is (post resource management): (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is (post resource management): (C-A2*B2)'.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+ DSP resource Status: w_multiply_invsqrt_b 0 1937 1937: Used 1 time : Accepted (156 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_c 0 1937 1937: Used 1 time : Accepted (157 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_d 0 1937 1937: Used 1 time : Accepted (158 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_e 0 1937 1937: Used 1 time : Accepted (159 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_f 0 1937 1937: Used 1 time : Accepted (160 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_10 0 1937 1937: Used 1 time : Accepted (129 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_11 0 1937 1937: Used 1 time : Accepted (130 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_12 0 1937 1937: Used 1 time : Accepted (131 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_13 0 1937 1937: Used 1 time : Accepted (132 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_14 0 1937 1937: Used 1 time : Accepted (133 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_15 0 1937 1937: Used 1 time : Accepted (134 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_16 0 1937 1937: Used 1 time : Accepted (135 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_17 0 1937 1937: Used 1 time : Accepted (136 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_18 0 1937 1937: Used 1 time : Accepted (137 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_19 0 1937 1937: Used 1 time : Accepted (138 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_1a 0 1937 1937: Used 1 time : Accepted (139 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_1b 0 1937 1937: Used 1 time : Accepted (140 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_1c 0 1937 1937: Used 1 time : Accepted (141 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_1d 0 1937 1937: Used 1 time : Accepted (142 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_1e 0 1937 1937: Used 1 time : Accepted (143 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_1f 0 1937 1937: Used 1 time : Accepted (144 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_20 0 1937 1937: Used 1 time : Accepted (145 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_21 0 1937 1937: Used 1 time : Accepted (146 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_22 0 1937 1937: Used 1 time : Accepted (147 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_23 0 1937 1937: Used 1 time : Accepted (148 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_24 0 1937 1937: Used 1 time : Accepted (149 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_25 0 1937 1937: Used 1 time : Accepted (150 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_26 0 1937 1937: Used 1 time : Accepted (151 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_27 0 1937 1937: Used 1 time : Accepted (152 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_28 0 1937 1937: Used 1 time : Accepted (153 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_29 0 1937 1937: Used 1 time : Accepted (154 < 220) uniquify 0 
+ DSP resource Status: w_multiply_invsqrt_2a 0 1937 1937: Used 1 time : Accepted (155 < 220) uniquify 0 
+DSP Report: Generating DSP u_normalization/gen_normalization_module[0].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[0].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[0].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[1].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[1].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[1].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[2].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[2].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[2].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[3].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[3].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[3].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[4].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[4].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[4].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[5].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[5].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[5].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[6].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[6].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[6].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[7].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[7].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[7].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[8].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[8].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[8].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[9].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[9].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[9].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[10].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[10].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[10].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[11].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[11].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[11].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[12].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[12].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[12].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[13].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[13].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[13].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[14].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[14].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[14].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[15].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[15].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[15].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[16].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[16].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[16].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[17].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[17].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[17].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[18].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[18].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[18].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[19].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[19].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[19].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[20].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[20].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[20].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[21].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[21].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[21].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[22].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[22].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[22].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[23].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[23].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[23].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[24].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[24].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[24].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[25].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[25].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[25].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[26].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[26].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[26].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[27].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[27].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[27].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[28].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[28].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[28].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[29].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[29].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[29].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[30].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[30].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[30].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[31].normalization_module/w_multiply_invsqrt, operation Mode is (post resource management): A*B.
+DSP Report: operator u_normalization/gen_normalization_module[31].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[31].normalization_module/w_multiply_invsqrt.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|accum_one_row | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mean          | (A*B)'         | 24     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mean          | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mean          | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|invsqrt       | (A2*B2)'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|var           | (C-A*B)'       | 16     | 16     | 24     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|normalization | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 2341.184 ; gain = 782.363 ; free physical = 1305 ; free virtual = 4856
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 2341.184 ; gain = 782.363 ; free physical = 1304 ; free virtual = 4855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 2401.668 ; gain = 842.848 ; free physical = 1248 ; free virtual = 4800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 2561.160 ; gain = 1002.340 ; free physical = 1104 ; free virtual = 4655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 2561.160 ; gain = 1002.340 ; free physical = 1100 ; free virtual = 4651
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 1st driver pin 'r_accum_fisnish_i_1/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 2nd driver pin 'r_accum_fisnish_i_2/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 3rd driver pin 'r_accum_fisnish_i_3/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 4th driver pin 'r_accum_fisnish_i_4/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 5th driver pin 'r_accum_fisnish_i_5/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 6th driver pin 'r_accum_fisnish_i_6/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 7th driver pin 'r_accum_fisnish_i_7/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 8th driver pin 'r_accum_fisnish_i_8/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 9th driver pin 'r_accum_fisnish_i_9/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 10th driver pin 'r_accum_fisnish_i_10/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 11th driver pin 'r_accum_fisnish_i_11__18/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 12th driver pin 'r_accum_fisnish_i_12__19/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 13th driver pin 'r_accum_fisnish_i_13__18/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 14th driver pin 'r_accum_fisnish_i_14__17/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 15th driver pin 'r_accum_fisnish_i_15__16/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 16th driver pin 'r_accum_fisnish_i_16__15/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 17th driver pin 'r_accum_fisnish_i_17__0/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 18th driver pin 'r_accum_fisnish_i_18/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 19th driver pin 'r_accum_fisnish_i_19/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 20th driver pin 'r_accum_fisnish_i_20/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 21th driver pin 'r_accum_fisnish_i_21/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 22th driver pin 'r_accum_fisnish_i_22/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 23th driver pin 'r_accum_fisnish_i_23/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 24th driver pin 'r_accum_fisnish_i_24/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 25th driver pin 'r_accum_fisnish_i_25/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 26th driver pin 'r_accum_fisnish_i_26/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 27th driver pin 'r_accum_fisnish_i_27/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 28th driver pin 'r_accum_fisnish_i_28/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 29th driver pin 'r_accum_fisnish_i_29/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 30th driver pin 'r_accum_fisnish_i_30/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 31th driver pin 'r_accum_fisnish_i_31/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin inst/w_calc_ready with 32th driver pin 'r_accum_fisnish_i_32/O' [/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.gen/sources_1/ip/layernorm_axi_wrapper_0/src/calculator_one_row.v:176]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 2573.582 ; gain = 1014.762 ; free physical = 1074 ; free virtual = 4625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 2573.582 ; gain = 1014.762 ; free physical = 1074 ; free virtual = 4625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 2573.582 ; gain = 1014.762 ; free physical = 1074 ; free virtual = 4625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 2573.582 ; gain = 1014.762 ; free physical = 1074 ; free virtual = 4625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (C-(A'*B'))'     | 30     | 18     | 48     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (C-(A'*B'))'     | 30     | 18     | 48     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (C-(A'*B'))'     | 30     | 18     | 48     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (C-(A'*B'))'     | 30     | 18     | 48     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|accum_one_row      | A'*B'            | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (A'*B')'         | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | (A*B')'          | 30     | 18     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row | A*B'             | 17     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row | (PCIN>>17+A*B')' | 30     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|var                | (C-(A*B))'       | 30     | 18     | 48     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|normalization      | A*B''            | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
++-------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |  3616|
+|2     |DSP48E1 |   220|
+|9     |LUT1    |    65|
+|10    |LUT2    | 18695|
+|11    |LUT3    |  2084|
+|12    |LUT4    |  1242|
+|13    |LUT5    |  2086|
+|14    |LUT6    |  6951|
+|15    |FDRE    |  6482|
+|16    |FDSE    |    65|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 2573.582 ; gain = 1014.762 ; free physical = 1058 ; free virtual = 4610
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 32 critical warnings and 101 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 2573.582 ; gain = 865.012 ; free physical = 1074 ; free virtual = 4625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:50 . Memory (MB): peak = 2573.590 ; gain = 1014.762 ; free physical = 1071 ; free virtual = 4625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.35 . Memory (MB): peak = 2573.590 ; gain = 0.000 ; free physical = 1232 ; free virtual = 4789
+INFO: [Netlist 29-17] Analyzing 3836 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2629.609 ; gain = 0.000 ; free physical = 1236 ; free virtual = 4794
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: febb693f
+INFO: [Common 17-83] Releasing license: Synthesis
+125 Infos, 134 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:02 . Memory (MB): peak = 2629.609 ; gain = 1215.457 ; free physical = 1236 ; free virtual = 4794
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2025.068; main = 1799.663; forked = 279.459
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3484.543; main = 2629.609; forked = 910.977
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.27 . Memory (MB): peak = 2653.621 ; gain = 0.000 ; free physical = 1235 ; free virtual = 4793
+INFO: [Common 17-1381] The checkpoint '/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/layernorm_axi_wrapper_0_synth_1/layernorm_axi_wrapper_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2653.621 ; gain = 24.012 ; free physical = 1234 ; free virtual = 4794
+write_vhdl: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2653.621 ; gain = 0.000 ; free physical = 1237 ; free virtual = 4796
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 260 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2653.621 ; gain = 0.000 ; free physical = 1236 ; free virtual = 4795
+INFO: [Common 17-1381] The checkpoint '/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.runs/layernorm_axi_wrapper_0_synth_1/layernorm_axi_wrapper_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2653.621 ; gain = 0.000 ; free physical = 1223 ; free virtual = 4782
+INFO: [Vivado 12-24828] Executing command : report_utilization -file layernorm_axi_wrapper_0_utilization_synth.rpt -pb layernorm_axi_wrapper_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 13:46:02 2026...

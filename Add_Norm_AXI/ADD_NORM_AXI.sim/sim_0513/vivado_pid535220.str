@@ -1,0 +1,129 @@
+/*
+
+AMD xsim v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 535220
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu May 14 02:38:08 KST 2026
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Ubuntu
+OS Version: 5.15.167.4-microsoft-standard-WSL2
+OS Architecture: amd64
+Available processors (cores): 16
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: localhost:11.0
+Screen size: 3627x1080
+Local screen bounds: x = 0, y = 0, width = 3627, height = 1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: true
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/home/linuxusr/tools/Vivado/2024.2/tps/lnx64/jre21.0.1_12
+Java executable: 	/home/linuxusr/tools/Vivado/2024.2/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	linuxusr
+User home directory: /home/linuxusr
+User working directory: /mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.sim/sim_0513
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/linuxusr/tools/Vivado
+HDI_APPROOT: /home/linuxusr/tools/Vivado/2024.2
+RDI_DATADIR: /home/linuxusr/tools/Vivado/2024.2/data
+RDI_BINDIR: /home/linuxusr/tools/Vivado/2024.2/bin
+
+Vivado preferences file: /home/linuxusr/.Xilinx/xsim/2024.2/vivado.xml
+Vivado preferences directory: /home/linuxusr/.Xilinx/xsim/2024.2/
+Vivado layouts directory: /home/linuxusr/.Xilinx/xsim/2024.2/data/layouts
+PlanAhead jar file: 	/home/linuxusr/tools/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.sim/sim_0513/simulate.log
+Vivado journal file: 	/mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.sim/sim_0513/xsim.jou
+Engine tmp dir: 	./.Xil/xsim-535220-jhnotebook
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /home/linuxusr/tools/Vivado/2024.2
+RDI_BASEROOT: /home/linuxusr/tools/Vivado
+RDI_BINROOT: /home/linuxusr/tools/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /home/linuxusr/tools/Vivado/2024.2/data
+RDI_INSTALLROOT: /home/linuxusr/tools
+RDI_INSTALLVER: 2024.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /home/linuxusr/tools/Vivado/2024.2/lib/lnx64.o/Ubuntu/20:/home/linuxusr/tools/Vivado/2024.2/lib/lnx64.o/Ubuntu:/home/linuxusr/tools/Vivado/2024.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /home/linuxusr/tools/Vitis/2024.2/bin:/home/linuxusr/tools/Vivado/2024.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /home/linuxusr/tools/Vivado/2024.2/bin/unwrapped/lnx64.o/xsim
+RDI_SESSION_INFO: /mnt/c/Study/Source/2026/Add_Norm_AXI/ADD_NORM_AXI.sim/sim_0513:jhnotebook_1778693868_535180
+RDI_SHARED_DATA: /home/linuxusr/tools/SharedData/2024.2/data
+RDI_TPS_ROOT: /home/linuxusr/tools/Vivado/2024.2/tps/lnx64
+RDI_USE_JDK21: 1
+SHELL: /bin/bash
+XILINX: /home/linuxusr/tools/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: /home/linuxusr/tools/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: /home/linuxusr/tools/Vitis/2024.2
+XILINX_PLANAHEAD: /home/linuxusr/tools/Vivado/2024.2
+XILINX_SDK: /home/linuxusr/tools/Vitis/2024.2
+XILINX_VITIS: /home/linuxusr/tools/Vitis/2024.2
+XILINX_VIVADO: /home/linuxusr/tools/Vivado/2024.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,627 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: source xsim.dir/tb_layernorm_axi_wrapper_no_gui_sim/xsim_script.tcl 
+// Tcl Message: # set_param project.enableReportConfiguration 0 
+// TclEventType: LOAD_FEATURE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: # load_feature core # current_fileset 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 127 MB (+130964kb) [00:00:13]
+// [Engine Memory]: 1,586 MB (+1511840kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  1300 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/linuxusr/tools/Vivado/2024.2/data/ip'. 
+// Tcl Message: # xsim {tb_layernorm_axi_wrapper_no_gui_sim} -wdb {simulate_xsim.wdb} -autoloadwcfg -tclbatch {sim.tcl} -protoinst {./protoinst_files/layernorm_sim.protoinst} 
