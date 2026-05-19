@@ -19,7 +19,7 @@ import axi_lite_master_vip_0_pkg::*;
 
 module tb_layernorm_axi_wrapper_no_gui();
 
-parameter integer MODEL_DIMENSION = 10; // 768;   // d_model , 전송 beat 수
+parameter integer MODEL_DIMENSION = 768; // 768;   // d_model , 전송 beat 수
 
 //─────────────────────────────────────────────
 
@@ -38,13 +38,15 @@ localparam int SCN_VALID_GAP    = 1;
 localparam int SCN_BACKPRESSURE = 2;
 
 // 테스트 시나리오 선택
-// parameter int DEFAULT_SCENARIO = SCN_BASIC;
+parameter int DEFAULT_SCENARIO = SCN_BASIC;
 // parameter int DEFAULT_SCENARIO = SCN_VALID_GAP;
-parameter int DEFAULT_SCENARIO = SCN_BACKPRESSURE;
+//parameter int DEFAULT_SCENARIO = SCN_BACKPRESSURE;
 
 // plusarg로도 변경 가능
 // 예: xsim 실행 옵션에 +SCENARIO=0 / +SCENARIO=1 / +SCENARIO=2
 int test_scenario;
+
+
 
 
 //─────────────────────────────────────────────
@@ -151,6 +153,32 @@ axi4stream_ready_gen axis_rgen;
 integer out_cnt;
 logic   output_done;
 
+//─────────────────────────────────────────────
+// trace 파일 기반 입력/출력/비교용 변수
+//
+// trace/in_data.txt  : AXI input stream stimulus
+// trace/rtl_norm.txt : 예상되는 output stream, golden
+// trace/AXI_norm.txt : AXI system simulation에서 실제 나온 output stream
+//
+// 512bit packing:
+// bits[15:0]     = row0[k]
+// bits[31:16]    = row1[k]
+// ...
+// bits[511:496]  = row31[k]
+//─────────────────────────────────────────────
+string input_file;
+string rtl_norm_file;
+string axi_norm_file;
+
+logic [511:0] input_mem    [0:MODEL_DIMENSION-1];
+logic [511:0] rtl_norm_mem [0:MODEL_DIMENSION-1];
+logic [511:0] axi_norm_mem [0:MODEL_DIMENSION-1];
+
+integer f_axi_norm;
+integer file_check_fd;
+integer axi_norm_write_cnt;
+integer compare_err_cnt;
+
 
 //─────────────────────────────────────────────
 // 시나리오 이름 출력용 function
@@ -244,12 +272,85 @@ task lite_read(input [31:0] addr, output [31:0] data);
     end
 endtask
 
+//─────────────────────────────────────────────
+// trace/in_data.txt, trace/rtl_norm.txt 읽기 task
+// in_data.txt  : 입력 stimulus
+// rtl_norm.txt : 예상 output golden
+//
+// $readmemh는 hex 대소문자를 구분하지 않음
+//─────────────────────────────────────────────
+task automatic load_trace_files();
+begin
+    input_file    = "trace/in_data.txt";
+    rtl_norm_file = "trace/rtl_norm.txt";
+
+    // 실행 위치가 달라질 경우 plusarg로 경로 변경 가능
+    // 예: +INPUT_FILE=trace/in_data.txt
+    // 예: +RTL_NORM_FILE=trace/rtl_norm.txt
+    if ($value$plusargs("INPUT_FILE=%s", input_file)) begin
+        $display("[PLUSARG] INPUT_FILE=%s", input_file);
+    end
+
+    if ($value$plusargs("RTL_NORM_FILE=%s", rtl_norm_file)) begin
+        $display("[PLUSARG] RTL_NORM_FILE=%s", rtl_norm_file);
+    end
+
+    // input 파일 존재 확인
+    file_check_fd = $fopen(input_file, "r");
+    if (file_check_fd == 0) begin
+        $fatal(1, "[FILE ERROR] cannot open input file: %s", input_file);
+    end
+    $fclose(file_check_fd);
+
+    // golden 파일 존재 확인
+    file_check_fd = $fopen(rtl_norm_file, "r");
+    if (file_check_fd == 0) begin
+        $fatal(1, "[FILE ERROR] cannot open rtl_norm golden file: %s", rtl_norm_file);
+    end
+    $fclose(file_check_fd);
+
+    // 512-bit hex x 768 line 읽기
+    $readmemh(input_file,    input_mem);
+    $readmemh(rtl_norm_file, rtl_norm_mem);
+
+    $display("[FILE LOAD] input trace loaded    : %s", input_file);
+    $display("[FILE LOAD] rtl_norm golden loaded: %s", rtl_norm_file);
+end
+endtask
+
+
+//─────────────────────────────────────────────
+// trace/AXI_norm.txt open task
+//
+// AXI output stream은 handshake 기준으로 AXI_norm.txt에 저장
+// 기존 golden인 rtl_norm.txt를 덮어쓰면 안 되므로 별도 파일 사용
+//─────────────────────────────────────────────
+task automatic open_axi_norm_file();
+begin
+    axi_norm_file = "trace/AXI_norm.txt";
+
+    // 실행 위치가 달라질 경우 plusarg로 경로 변경 가능
+    // 예: +AXI_NORM_FILE=trace/AXI_norm.txt
+    if ($value$plusargs("AXI_NORM_FILE=%s", axi_norm_file)) begin
+        $display("[PLUSARG] AXI_NORM_FILE=%s", axi_norm_file);
+    end
+
+    f_axi_norm = $fopen(axi_norm_file, "w");
+    if (f_axi_norm == 0) begin
+        $fatal(1, "[FILE ERROR] cannot open AXI output file: %s", axi_norm_file);
+    end
+
+    axi_norm_write_cnt = 0;
+
+    $display("[FILE OPEN] AXI output file opened: %s", axi_norm_file);
+end
+endtask
 
 //─────────────────────────────────────────────
 // ⑦ AXI-Stream 768(MODEL_DIMENSION) beats 전송 task
 //─────────────────────────────────────────────
 // AXI-Stream 768(MODEL_DIMENSION) beats 전송 task [continuous stream tvalid]
-task send_768_beats(input [511:0] base_data);
+task send_768_beats();//input [511:0] base_data);
     // transaction: AXI-Stream 한 beat(1사이클)의 데이터 묶음
     axi4stream_transaction trans;
     int i;
@@ -260,7 +361,8 @@ task send_768_beats(input [511:0] base_data);
 
         // 데이터 설정
         // set_data_beat(data) : data beat에 값 넣기
-        trans.set_data_beat(base_data + i);  // beat마다 다른값
+        // input_mem[i] = trace/in_data.txt의 i번째 512-bit line
+        trans.set_data_beat(input_mem[i]);
 
         // tlast 설정 : 마지막 beat에만 1
         if (i == MODEL_DIMENSION-1)
@@ -280,7 +382,7 @@ endtask
 
 
 // AXI-Stream 768(MODEL_DIMENSION) beats 전송 task [input_gap stream tvalid]
-task send_768_beats_with_validgap(input [511:0] base_data);
+task send_768_beats_with_validgap();//input [511:0] base_data);
     // transaction: AXI-Stream 한 beat(1사이클)의 데이터 묶음
     axi4stream_transaction trans;
     int i;
@@ -291,7 +393,8 @@ task send_768_beats_with_validgap(input [511:0] base_data);
 
         // 데이터 설정
         // set_data_beat(data) : data beat에 값 넣기
-        trans.set_data_beat(base_data + i);  // beat마다 다른값
+        // input_mem[i] = trace/in_data.txt의 i번째 512-bit line
+        trans.set_data_beat(input_mem[i]);
 
         // tlast 설정 : 마지막 beat에만 1
         if (i == MODEL_DIMENSION-1)
@@ -319,24 +422,24 @@ endtask
 // 시나리오별 input 전송 task 선택
 // ITER1/ITER2에서 직접 send_768_beats를 주석처리하지 않기 위해 분리
 //─────────────────────────────────────────────
-task automatic send_input_by_scenario(input [511:0] base_data);
+task automatic send_input_by_scenario();//input [511:0] base_data);
 begin
     case (test_scenario)
 
         SCN_BASIC: begin
             // 기본 시나리오 : input valid 연속
-            send_768_beats(base_data);
+            send_768_beats();//base_data);
         end
 
         SCN_VALID_GAP: begin
             // input valid bubble 시나리오 : 중간중간 valid gap 발생
-            send_768_beats_with_validgap(base_data);
+            send_768_beats_with_validgap();//base_data);
         end
 
         SCN_BACKPRESSURE: begin
             // backpressure 시나리오에서는 input은 continuous로 둠
             // 그래야 output tready stall 효과만 분리해서 볼 수 있음
-            send_768_beats(base_data);
+            send_768_beats();//base_data);
         end
 
         default: begin
@@ -440,6 +543,42 @@ begin
 end
 endtask
 
+//─────────────────────────────────────────────
+// rtl_norm.txt vs AXI_norm.txt 비교 task
+//
+// rtl_norm.txt는 rtl_norm_mem에,
+// AXI output stream은 axi_norm_mem에 저장해둔 뒤
+// 512-bit 값 기준으로 비교함.
+//─────────────────────────────────────────────
+task automatic compare_axi_norm_with_rtl_norm();
+    integer i;
+begin
+    compare_err_cnt = 0;
+
+    $display("==============================================");
+    $display("[COMPARE START] %s vs %s", rtl_norm_file, axi_norm_file);
+    $display("==============================================");
+
+    for (i = 0; i < MODEL_DIMENSION; i = i + 1) begin
+        if (axi_norm_mem[i] !== rtl_norm_mem[i]) begin
+            compare_err_cnt = compare_err_cnt + 1;
+
+            $error("[COMPARE ERROR] beat=%0d actual_AXI=%0128x expected_RTL=%0128x",
+                   i, axi_norm_mem[i], rtl_norm_mem[i]);
+        end
+    end
+
+    if (compare_err_cnt == 0) begin
+        $display("[COMPARE PASS] AXI_norm matches rtl_norm. total beats=%0d", MODEL_DIMENSION);
+    end
+    else begin
+        $display("[COMPARE FAIL] mismatch count=%0d / %0d", compare_err_cnt, MODEL_DIMENSION);
+        $fatal(1, "[COMPARE FAIL] AXI_norm does not match rtl_norm");
+    end
+
+    $display("==============================================");
+end
+endtask
 
 //─────────────────────────────────────────────
 // ⑧ 메인 테스트 시나리오
@@ -460,6 +599,11 @@ initial begin
 
     //── 0. VIP Agent 생성 및 start ─────────────
     init_vip_agents();
+    //── 0-0. trace/in_data.txt, trace/rtl_norm.txt 읽기 ─────
+    load_trace_files();
+    //── 0-0-1. trace/AXI_norm.txt 열기 ─────────
+    open_axi_norm_file();
+
 
     //── 0-1. Reset ─────────────────────────────
     reset_dut();
@@ -478,7 +622,7 @@ initial begin
     //── 3. ITER1 데이터 전송 ──────────────────
     // 기존에는 여기서 send_768_beats / send_768_beats_with_validgap를 주석처리로 선택했음
     // 이제는 test_scenario 값에 따라 자동 선택됨
-    send_input_by_scenario(512'hA5A5);
+    send_input_by_scenario();//512'hA5A5);
 
     //── 4. ITER1 DONE 대기 (status polling) ───
     wait_iter1_done();
@@ -489,12 +633,19 @@ initial begin
     //── 6. ITER2 데이터 전송 ──────────────────
     // 기존에는 여기서 send_768_beats / send_768_beats_with_validgap를 주석처리로 선택했음
     // 이제는 test_scenario 값에 따라 자동 선택됨
-    send_input_by_scenario(512'hA5A5);
+    send_input_by_scenario();//512'hA5A5);
 
     //── 7. 출력 DONE 대기 후 종료 ─────────────
     // MODEL_DIMENSION=768 + backpressure일 때 repeat(3000)은 부족할 수 있음
     // 그래서 TLAST가 실제로 나올 때까지 기다림
     wait_output_done(20000);
+
+    // AXI_norm.txt close
+    $fclose(f_axi_norm);
+    $display("[FILE CLOSE] AXI output file closed: %s", axi_norm_file);
+
+    compare_axi_norm_with_rtl_norm(); //결과 mem 비교
+
 
     repeat(20) @(posedge aclk);
 
@@ -532,24 +683,77 @@ always @(dut.c_state) begin
     endcase
 end
 
-
 //─────────────────────────────────────────────
-// ⑪ output beat count and display last beat num
+// ⑪ AXI stream output beat count + AXI_norm.txt 저장
 // output_done은 wait_output_done task에서 사용
+
+
+//out_cnt >= MODEL_DIMENSION : 769번째, 770번째... 같은 초과 output beat 방지
+// axis_out_tlast && (out_cnt + 1) != MODEL_DIMENSION : TLAST가 768개째가 아닌 위치에서 나온 경우 확인
+// out_cnt == MODEL_DIMENSION-1 && !axis_out_tlast : 768번째 beat인데 TLAST가 안 나온 경우 확인
+// wait_output_done timeout : TLAST가 아예 안 나오는 경우 확인
+
+
+// 저장 기준:
+// axi stream out handshake가 발생한 beat만
+// 실제 output stream으로 인정하고 trace/AXI_norm.txt에 저장
+//
+// 저장 format:
+// 512-bit 한 줄 = 128 hex digit
+// 왼쪽 hex = row31, 오른쪽 hex = row0
 //─────────────────────────────────────────────
 always @(posedge aclk) begin
     if (!aresetn) begin
-        out_cnt     <= 0;
-        output_done <= 1'b0;
+        out_cnt            <= 0;
+        output_done        <= 1'b0;
+        axi_norm_write_cnt <= 0;
     end
 
     else if (axis_out_tvalid && axis_out_tready) begin
-        out_cnt <= out_cnt + 1;
 
+        //출력이 초과상황
+        if (out_cnt >= MODEL_DIMENSION) begin
+            $error("[AXIS OUT ERROR] output beat exceeded MODEL_DIMENSION. out_cnt=%0d", out_cnt);
+            //axi_norm_mem[out_cnt] 같은 배열 저장해서, out_cnt=768일 때 접근하면 out-of-range라서 이 guard가 필요
+        end
+
+        else begin
+            // AXI output stream 한 beat를 memory에 저장
+            axi_norm_mem[out_cnt] = axis_out_tdata;
+
+            // AXI output stream 한 beat를 trace/AXI_norm.txt에 저장
+            // %0128x : 512-bit = 128 hex digit, lowercase hex로 저장
+            // diff를 쓸 경우 대소문자 무시는 diff -i 사용
+            $fwrite(f_axi_norm, "%0128x\n", axis_out_tdata);
+
+            axi_norm_write_cnt <= axi_norm_write_cnt + 1;
+        end
+
+        // 마지막 beat 처리
         if (axis_out_tlast) begin
-            $display("[AXIS OUT DONE] TOTAL OUT BEATS = %0d, tlast = %b", out_cnt + 1, axis_out_tlast);
+            $display("[AXIS OUT DONE] TOTAL OUT BEATS = %0d, tlast = %b",
+                     out_cnt + 1, axis_out_tlast);
+
+            //TLAST가 너무 빨리/너무 늦게 나오는 경우 확인
+            if (out_cnt != MODEL_DIMENSION-1) begin //out_cnt는 integer라서 X안봐도 되서 !==대신 !=사용
+                $error("[COUNT ERROR] output beat count=%0d, expected=%0d",
+                       out_cnt + 1, MODEL_DIMENSION);
+            end
+            else begin
+                $display("[AXI NORM WRITE DONE] %0d lines written to %s",
+                         out_cnt + 1, axi_norm_file);
+            end
+
             output_done <= 1'b1;
         end
+
+        // MODEL_DIMENSION번째 beat인데 TLAST가 안 나온 경우
+        else if (out_cnt == MODEL_DIMENSION-1) begin
+            $error("[TLAST ERROR] expected TLAST=1 at output beat %0d", out_cnt);
+        end
+
+        // output beat count 증가
+        out_cnt <= out_cnt + 1;
     end
 end
 

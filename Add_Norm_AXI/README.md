@@ -5,6 +5,7 @@ testbench = tb_layernorm_axi_wrapper_no_gui.sv 파일
 
 ```
 sim_0513/
+├── trace/                              ← 512bit*768개의 input 및 output파일 저장위치
 ├── protoinst_files/
 │   └── layernorm_sim.protoinst        ← Vivado Protocol Analyzer 포트 매핑 JSON 
 │                                        transaction단위로 볼 수 있도록 VIP의 IF를 protocol instances로

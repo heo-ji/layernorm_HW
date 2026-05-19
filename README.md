@@ -17,6 +17,9 @@ add_norm_core/
 ```
 ### Add_Norm_HW : HW 버전별 rtl 코드
 HW_v2 : overflow 처리 X
+HW_v2.1 : norm에서 handshake기반수정+overflow처리  +  AXI wrapper 까지 확인 
+HW_v3 : accum만 overflow처리 (근데 768까지는 필요없는..)
+
 HW_v4 : 모든 부분 overflow처리 O
 
 ### Add_Norm_AXI : AXI+IP + DMA + PS
