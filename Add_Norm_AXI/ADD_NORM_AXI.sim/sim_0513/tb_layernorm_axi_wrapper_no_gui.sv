@@ -181,8 +181,8 @@ begin
     // TVALID=0인 idle 구간의 TDATA/TLAST는 의미 없는 값인데,
     // VIP 내부 protocol checker가 이 idle 값을 보고 false assertion을 띄울 수 있음.
     // 이 설정은 idle 구간에서 VIP가 불필요하게 값을 drive하지 않도록 하는 용도.
-    axis_mst_agent.vif_proxy.set_dummy_drive_type(XIL_AXI_VIF_DRIVE_NONE);
-    axis_slv_agent.vif_proxy.set_dummy_drive_type(XIL_AXI_VIF_DRIVE_NONE);
+    ////axis_mst_agent.vif_proxy.set_dummy_drive_type(XIL_AXI_VIF_DRIVE_NONE);
+    ////axis_slv_agent.vif_proxy.set_dummy_drive_type(XIL_AXI_VIF_DRIVE_NONE);
 
     // start_master() : 이 VIP는 Master로 동작 시작
     // start_slave()  : 이 VIP는 Slave로 동작 시작
@@ -374,15 +374,13 @@ begin
 
             // step2. TREADY를 주기적으로 0/1로 흔드는 모드 설정
             // PG277 예시 기준으로 XIL_AXI4STREAM_READY_GEN_OSC 사용
-            axis_rgen.set_ready_policy(XIL_AXI4STREAM_READY_GEN_OSC);
+            axis_rgen.set_ready_policy(XIL_AXI4STREAM_READY_GEN_AFTER_VALID_OSC);
 
-            // step3. TREADY=0(Low) 구간을 길게 설정
-            // 10 cycle 동안 downstream이 받을 수 없는 상황을 만듦
-            axis_rgen.set_low(10);
+            // step3. TREADY=0(Low)인 구간을 10~20 클락으로 길게 설정
+            axis_rgen.set_low_time_range(10, 20);
 
-            // step4. TREADY=1(High) 구간은 짧게 설정
-            // 2 cycle만 열어줘서 계속 압박 주기
-            axis_rgen.set_high(2);
+            // step4. TREADY=1(High)인 구간은 1~2 클락으로 짧게 설정
+            axis_rgen.set_high_time_range(1, 2);
 
             // step5. Slave VIP가 위 ready pattern으로 TREADY를 drive
             axis_slv_agent.driver.send_tready(axis_rgen);
