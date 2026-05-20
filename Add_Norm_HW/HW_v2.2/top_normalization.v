@@ -25,6 +25,11 @@ assign o_m_valid = &w_m_valid;
 wire [MODULE_NUM-1:0]   w_o_s_ready;
 assign o_s_ready = &w_o_s_ready;
 
+
+wire [MODULE_NUM-1:0]   w_o_data_last;
+assign o_data_last = &w_o_data_last;
+
+
 genvar i;
 generate 
     for (i = 0; i < MODULE_NUM; i = i + 1) begin : gen_normalization_module
@@ -42,7 +47,7 @@ generate
 			.i_data 	(   i_data   [DATA_WIDTH*(i+1)-1 : DATA_WIDTH*i]    ),
 			.o_data	    (   o_data   [DATA_WIDTH*(i+1)-1 : DATA_WIDTH*i]   	),
             .i_data_last (   i_data_last                                     ),
-            .o_data_last (o_data_last)
+			.o_data_last (w_o_data_last[i])
 		);
     end
 endgenerate
