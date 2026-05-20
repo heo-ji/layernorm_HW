@@ -23,10 +23,11 @@ HW_v3 : accum만 overflow처리 (근데 768까지는 필요없는..)
 
 HW_v4 : 모든 부분 overflow처리 O
 
-### Add_Norm_AXI : AXI+IP
+### Add_Norm_AXI : AXI+IP with AXI-VIP
 해당폴더 내부 README.md참고
 
 ### Add_Norm_PYNQ : AXI+IP+ PS+DMA
-- v1 : local
+- v1 : local  
 - v2 : 145server (board : zcu111)
+  ㄴ project_dma_wrapper/project_dma_wrapper.runs/impl_1/ps_dma_ip_wrapper.bit = bitstream위치
 
