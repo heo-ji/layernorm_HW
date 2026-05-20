@@ -27,5 +27,6 @@ HW_v4 : 모든 부분 overflow처리 O
 해당폴더 내부 README.md참고
 
 ### Add_Norm_PYNQ : AXI+IP+ PS+DMA
-
+- v1 : local
+- v2 : 145server (board : zcu111)
 
