@@ -1,0 +1,618 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed May 20 18:41:50 2026
+# Process ID: 1033521
+# Current directory: /home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_layernorm_axi_wrapper_0_0_synth_1
+# Command line: vivado -log ps_dma_ip_layernorm_axi_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ps_dma_ip_layernorm_axi_wrapper_0_0.tcl
+# Log file: /home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_layernorm_axi_wrapper_0_0_synth_1/ps_dma_ip_layernorm_axi_wrapper_0_0.vds
+# Journal file: /home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_layernorm_axi_wrapper_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ps_dma_ip_layernorm_axi_wrapper_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/esoc/Workspace/HJH/project_dma_wrapper/HWv2_2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top ps_dma_ip_layernorm_axi_wrapper_0_0 -part xczu28dr-ffvg1517-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-1540] The version limit for your license is '2025.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1033845
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2904.008 ; gain = 206.652 ; free physical = 10950 ; free virtual = 25766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ps_dma_ip_layernorm_axi_wrapper_0_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_layernorm_axi_wrapper_0_0/synth/ps_dma_ip_layernorm_axi_wrapper_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'layernorm_axi_wrapper' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/layernorm_axi_wrapper.v:10]
+INFO: [Synth 8-6157] synthesizing module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI.v:158]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI.v:294]
+INFO: [Synth 8-6155] done synthesizing module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI' (1#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'top_calculator_one_row' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/top_calculator_one_row.v:24]
+INFO: [Synth 8-6157] synthesizing module 'calculator_one_row' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/calculator_one_row.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/calculator_one_row.v:133]
+INFO: [Synth 8-6157] synthesizing module 'accum_one_row' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/accum_one_row.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'accum_one_row' (2#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/accum_one_row.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mean' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/mean.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mean' (3#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/mean.v:3]
+INFO: [Synth 8-6157] synthesizing module 'var' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/var.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'var' (4#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/var.v:4]
+INFO: [Synth 8-6157] synthesizing module 'invsqrt' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/invsqrt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'invsqrt_LUT' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/invsqrt_LUT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/comparator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (5#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/comparator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'invsqrt_LUT' (6#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/invsqrt_LUT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/invsqrt.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'invsqrt' (7#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/invsqrt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'calculator_one_row' (8#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/calculator_one_row.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_calculator_one_row' (9#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/top_calculator_one_row.v:24]
+INFO: [Synth 8-6157] synthesizing module 'top_normalization' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/top_normalization.v:3]
+INFO: [Synth 8-6157] synthesizing module 'normalization' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/normalization.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'normalization' (10#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/normalization.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_normalization' (11#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/top_normalization.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'layernorm_axi_wrapper' (12#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/046a/layernorm_axi_wrapper.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ps_dma_ip_layernorm_axi_wrapper_0_0' (13#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_layernorm_axi_wrapper_0_0/synth/ps_dma_ip_layernorm_axi_wrapper_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2947.945 ; gain = 250.590 ; free physical = 9387 ; free virtual = 24206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2965.758 ; gain = 268.402 ; free physical = 8917 ; free virtual = 23736
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2965.758 ; gain = 268.402 ; free physical = 8918 ; free virtual = 23738
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2965.758 ; gain = 0.000 ; free physical = 8335 ; free virtual = 23156
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_layernorm_axi_wrapper_0_0/clock_const.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_layernorm_axi_wrapper_0_0/clock_const.xdc] for cell 'inst'
+Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_layernorm_axi_wrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_layernorm_axi_wrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3160.289 ; gain = 0.000 ; free physical = 9228 ; free virtual = 24085
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3160.289 ; gain = 0.000 ; free physical = 9242 ; free virtual = 24081
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3160.289 ; gain = 462.934 ; free physical = 9376 ; free virtual = 24217
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3160.289 ; gain = 462.934 ; free physical = 9372 ; free virtual = 24213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_layernorm_axi_wrapper_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3160.289 ; gain = 462.934 ; free physical = 9362 ; free virtual = 24202
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'calculator_one_row'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'layernorm_axi_wrapper'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'layernorm_axi_wrapper_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+              CALC_ACCUM |                           000010 |                              001
+               CALC_MEAN |                           000100 |                              010
+                CALC_VAR |                           001000 |                              011
+            CALC_INVSQRT |                           010000 |                              100
+                    DONE |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'one-hot' in module 'calculator_one_row'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                   ITER1 |                            10000 |                              001
+                   STORE |                            01000 |                              010
+              WAIT_ITER2 |                            00100 |                              011
+                   ITER2 |                            00010 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'one-hot' in module 'layernorm_axi_wrapper'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 3160.289 ; gain = 462.934 ; free physical = 9242 ; free virtual = 24083
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 8     
+	   2 Input   24 Bit       Adders := 8     
+	   2 Input   16 Bit       Adders := 8     
+	   3 Input   16 Bit       Adders := 8     
+	   2 Input   11 Bit       Adders := 8     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 13    
+	               24 Bit    Registers := 16    
+	               16 Bit    Registers := 64    
+	               11 Bit    Registers := 8     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 77    
++---Multipliers : 
+	               8x34  Multipliers := 8     
+	               8x32  Multipliers := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   6 Input   32 Bit        Muxes := 5     
+	  16 Input   16 Bit        Muxes := 8     
+	   2 Input   16 Bit        Muxes := 48    
+	  26 Input   15 Bit        Muxes := 8     
+	   6 Input    6 Bit        Muxes := 8     
+	   2 Input    6 Bit        Muxes := 16    
+	  26 Input    4 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 85    
+	   3 Input    1 Bit        Muxes := 46    
+	   4 Input    1 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is: A2*B2.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_mean/w_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_mean is absorbed into DSP u_mean/w_mean.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is: (C-A2*B2)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is: (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is: A2*B2.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_mean/w_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_mean is absorbed into DSP u_mean/w_mean.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is: (C-A2*B2)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is: (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is: A2*B2.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_mean/w_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_mean is absorbed into DSP u_mean/w_mean.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is: (C-A2*B2)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is: (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is: A2*B2.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_mean/w_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_mean is absorbed into DSP u_mean/w_mean.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is: (C-A2*B2)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is: (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is: A2*B2.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_mean/w_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_mean is absorbed into DSP u_mean/w_mean.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is: (C-A2*B2)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is: (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is: A2*B2.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_mean/w_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_mean is absorbed into DSP u_mean/w_mean.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is: (C-A2*B2)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is: (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is: A2*B2.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_mean/w_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_mean is absorbed into DSP u_mean/w_mean.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is: (C-A2*B2)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is: (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_accum/w_squared_data, operation Mode is: A2*B2.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: register r_data_reg is absorbed into DSP u_accum/w_squared_data.
+DSP Report: operator u_accum/w_squared_data is absorbed into DSP u_accum/w_squared_data.
+DSP Report: Generating DSP u_mean/w_squared_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/w_squared_mean.
+DSP Report: Generating DSP u_mean/o_squared_mean_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register u_mean/o_squared_mean_reg is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: operator u_mean/w_squared_mean is absorbed into DSP u_mean/o_squared_mean_reg.
+DSP Report: Generating DSP u_mean/w_mean, operation Mode is: A*B.
+DSP Report: operator u_mean/w_mean is absorbed into DSP u_mean/w_mean.
+DSP Report: Generating DSP u_var/o_var_reg, operation Mode is: (C-A2*B2)'.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_mean/o_mean_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: register u_var/o_var_reg is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_var is absorbed into DSP u_var/o_var_reg.
+DSP Report: operator u_var/w_mean is absorbed into DSP u_var/o_var_reg.
+DSP Report: Generating DSP u_invsqrt/r_mul_reg, operation Mode is: (A2*B2)'.
+DSP Report: register u_invsqrt/u_invsqrt_LUT/out_slope_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_var_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: register u_invsqrt/r_mul_reg is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: operator u_invsqrt/r_mul0 is absorbed into DSP u_invsqrt/r_mul_reg.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[0].normalization_module/w_multiply_invsqrt, operation Mode is: A*B2.
+DSP Report: register r_invsqrt_reg is absorbed into DSP u_normalization/gen_normalization_module[0].normalization_module/w_multiply_invsqrt.
+DSP Report: operator u_normalization/gen_normalization_module[0].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[0].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[1].normalization_module/w_multiply_invsqrt, operation Mode is: A*B2.
+DSP Report: register u_normalization/gen_normalization_module[1].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[1].normalization_module/w_multiply_invsqrt.
+DSP Report: operator u_normalization/gen_normalization_module[1].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[1].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[2].normalization_module/w_multiply_invsqrt, operation Mode is: A*B2.
+DSP Report: register u_normalization/gen_normalization_module[2].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[2].normalization_module/w_multiply_invsqrt.
+DSP Report: operator u_normalization/gen_normalization_module[2].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[2].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[3].normalization_module/w_multiply_invsqrt, operation Mode is: A*B2.
+DSP Report: register u_normalization/gen_normalization_module[3].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[3].normalization_module/w_multiply_invsqrt.
+DSP Report: operator u_normalization/gen_normalization_module[3].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[3].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[4].normalization_module/w_multiply_invsqrt, operation Mode is: A*B2.
+DSP Report: register u_normalization/gen_normalization_module[4].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[4].normalization_module/w_multiply_invsqrt.
+DSP Report: operator u_normalization/gen_normalization_module[4].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[4].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[5].normalization_module/w_multiply_invsqrt, operation Mode is: A*B2.
+DSP Report: register u_normalization/gen_normalization_module[5].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[5].normalization_module/w_multiply_invsqrt.
+DSP Report: operator u_normalization/gen_normalization_module[5].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[5].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[6].normalization_module/w_multiply_invsqrt, operation Mode is: A*B2.
+DSP Report: register u_normalization/gen_normalization_module[6].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[6].normalization_module/w_multiply_invsqrt.
+DSP Report: operator u_normalization/gen_normalization_module[6].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[6].normalization_module/w_multiply_invsqrt.
+DSP Report: Generating DSP u_normalization/gen_normalization_module[7].normalization_module/w_multiply_invsqrt, operation Mode is: A*B2.
+DSP Report: register u_normalization/gen_normalization_module[7].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[7].normalization_module/w_multiply_invsqrt.
+DSP Report: operator u_normalization/gen_normalization_module[7].normalization_module/w_multiply_invsqrt is absorbed into DSP u_normalization/gen_normalization_module[7].normalization_module/w_multiply_invsqrt.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 3160.289 ; gain = 462.934 ; free physical = 10087 ; free virtual = 24775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below)
++----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name           | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|calculator_one_row    | A2*B2          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row    | A*B            | 24     | 8      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (C-A2*B2)'     | 16     | 16     | 24     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|calculator_one_row    | (A2*B2)'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|calculator_one_row    | A2*B2          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row    | A*B            | 24     | 8      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (C-A2*B2)'     | 16     | 16     | 24     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|calculator_one_row    | (A2*B2)'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|calculator_one_row    | A2*B2          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row    | A*B            | 24     | 8      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (C-A2*B2)'     | 16     | 16     | 24     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|calculator_one_row    | (A2*B2)'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|calculator_one_row    | A2*B2          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row    | A*B            | 24     | 8      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (C-A2*B2)'     | 16     | 16     | 24     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|calculator_one_row    | (A2*B2)'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|calculator_one_row    | A2*B2          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row    | A*B            | 24     | 8      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (C-A2*B2)'     | 16     | 16     | 24     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|calculator_one_row    | (A2*B2)'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|calculator_one_row    | A2*B2          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row    | A*B            | 24     | 8      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (C-A2*B2)'     | 16     | 16     | 24     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|calculator_one_row    | (A2*B2)'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|calculator_one_row    | A2*B2          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row    | A*B            | 24     | 8      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (C-A2*B2)'     | 16     | 16     | 24     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|calculator_one_row    | (A2*B2)'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|calculator_one_row    | A2*B2          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|calculator_one_row    | A*B            | 24     | 8      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculator_one_row    | (C-A2*B2)'     | 16     | 16     | 24     | -      | 24     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|calculator_one_row    | (A2*B2)'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|layernorm_axi_wrapper | A*B2           | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|layernorm_axi_wrapper | A*B2           | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|layernorm_axi_wrapper | A*B2           | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|layernorm_axi_wrapper | A*B2           | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|layernorm_axi_wrapper | A*B2           | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|layernorm_axi_wrapper | A*B2           | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|layernorm_axi_wrapper | A*B2           | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|layernorm_axi_wrapper | A*B2           | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 3441.938 ; gain = 744.582 ; free physical = 12085 ; free virtual = 26791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 3490.539 ; gain = 793.184 ; free physical = 11735 ; free virtual = 26497
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 3524.562 ; gain = 827.207 ; free physical = 11536 ; free virtual = 26300
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 3531.500 ; gain = 834.145 ; free physical = 11384 ; free virtual = 26150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 3531.500 ; gain = 834.145 ; free physical = 11384 ; free virtual = 26150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 3531.500 ; gain = 834.145 ; free physical = 11338 ; free virtual = 26108
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 3531.500 ; gain = 834.145 ; free physical = 11331 ; free virtual = 26101
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 3531.500 ; gain = 834.145 ; free physical = 11334 ; free virtual = 26104
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 3531.500 ; gain = 834.145 ; free physical = 11334 ; free virtual = 26105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   512|
+|2     |DSP_ALU         |    56|
+|3     |DSP_A_B_DATA    |    56|
+|6     |DSP_C_DATA      |    56|
+|8     |DSP_MULTIPLIER  |    56|
+|9     |DSP_M_DATA      |    56|
+|10    |DSP_OUTPUT      |    56|
+|12    |DSP_PREADD      |    56|
+|13    |DSP_PREADD_DATA |    56|
+|14    |LUT1            |    17|
+|15    |LUT2            |  4705|
+|16    |LUT3            |   600|
+|17    |LUT4            |   153|
+|18    |LUT5            |   609|
+|19    |LUT6            |  1532|
+|20    |FDRE            |  1730|
+|21    |FDSE            |   129|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 3531.500 ; gain = 834.145 ; free physical = 11324 ; free virtual = 26094
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3531.500 ; gain = 639.613 ; free physical = 11371 ; free virtual = 26141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 3531.508 ; gain = 834.145 ; free physical = 11371 ; free virtual = 26141
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3547.438 ; gain = 0.000 ; free physical = 11381 ; free virtual = 26154
+INFO: [Netlist 29-17] Analyzing 568 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3628.141 ; gain = 0.000 ; free physical = 11268 ; free virtual = 26044
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 56 instances
+
+Synth Design complete, checksum: 3b70b00c
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:04 . Memory (MB): peak = 3628.141 ; gain = 1050.637 ; free physical = 11533 ; free virtual = 26310
+INFO: [Common 17-1381] The checkpoint '/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_layernorm_axi_wrapper_0_0_synth_1/ps_dma_ip_layernorm_axi_wrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ps_dma_ip_layernorm_axi_wrapper_0_0, cache-ID = 7bd146c39ca48a77
+INFO: [Coretcl 2-1174] Renamed 68 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_layernorm_axi_wrapper_0_0_synth_1/ps_dma_ip_layernorm_axi_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ps_dma_ip_layernorm_axi_wrapper_0_0_utilization_synth.rpt -pb ps_dma_ip_layernorm_axi_wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 20 18:43:11 2026...

@@ -1,0 +1,630 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed May 20 18:41:50 2026
+# Process ID: 1033514
+# Current directory: /home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_smartconnect_0_0_synth_1
+# Command line: vivado -log ps_dma_ip_smartconnect_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ps_dma_ip_smartconnect_0_0.tcl
+# Log file: /home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_smartconnect_0_0_synth_1/ps_dma_ip_smartconnect_0_0.vds
+# Journal file: /home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_smartconnect_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ps_dma_ip_smartconnect_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/esoc/Workspace/HJH/project_dma_wrapper/HWv2_2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top ps_dma_ip_smartconnect_0_0 -part xczu28dr-ffvg1517-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-1540] The version limit for your license is '2025.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1034054
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2930.098 ; gain = 205.684 ; free physical = 6892 ; free virtual = 21715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ps_dma_ip_smartconnect_0_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/synth/ps_dma_ip_smartconnect_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1T0CD3K' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_one_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_bdc1_one_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (1#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_one_0' (2#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_bdc1_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_bdc1_psr_aclk_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_bdc1_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_bdc1_psr_aclk_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp_diablo.v:100945' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp_diablo.v:100945]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (3#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp_diablo.v:100945]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_bdc1_psr_aclk_0' (9#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_bdc1_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_bdc1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:1776]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_bdc1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:1776]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_bdc1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:1776]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_bdc1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:1776]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_bdc1_psr_aclk_0' has 10 connections declared, but only 6 given [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:1776]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1T0CD3K' (10#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_58O1OR' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:2090]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m00e_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_41/synth/bd_bdc1_m00e_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (11#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m00e_0' (18#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_41/synth/bd_bdc1_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_58O1OR' (19#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:2090]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_IJM5D3' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:2391]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m00arn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_36/synth/bd_bdc1_m00arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m00arn_0' (29#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_36/synth/bd_bdc1_m00arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m00awn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_38/synth/bd_bdc1_m00awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m00awn_0' (30#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_38/synth/bd_bdc1_m00awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m00bn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_40/synth/bd_bdc1_m00bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m00bn_0' (31#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_40/synth/bd_bdc1_m00bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m00rn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_37/synth/bd_bdc1_m00rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m00rn_0' (32#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_37/synth/bd_bdc1_m00rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m00wn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_39/synth/bd_bdc1_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m00wn_0' (33#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_39/synth/bd_bdc1_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_IJM5D3' (34#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:2391]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m00s2a_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_35/synth/bd_bdc1_m00s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m00s2a_0' (36#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_35/synth/bd_bdc1_m00s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_1LVGI3' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:2687]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m01e_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_48/synth/bd_bdc1_m01e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m01e_0' (37#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_48/synth/bd_bdc1_m01e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_1LVGI3' (38#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:2687]
+INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_1Q3ZHLD' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:2988]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m01arn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_43/synth/bd_bdc1_m01arn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m01arn_0' (39#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_43/synth/bd_bdc1_m01arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m01awn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_45/synth/bd_bdc1_m01awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m01awn_0' (40#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_45/synth/bd_bdc1_m01awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m01bn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_47/synth/bd_bdc1_m01bn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m01bn_0' (41#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_47/synth/bd_bdc1_m01bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m01rn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_44/synth/bd_bdc1_m01rn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m01rn_0' (42#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_44/synth/bd_bdc1_m01rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m01wn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_46/synth/bd_bdc1_m01wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m01wn_0' (43#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_46/synth/bd_bdc1_m01wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_1Q3ZHLD' (44#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:2988]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_m01s2a_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_42/synth/bd_bdc1_m01s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_m01s2a_0' (45#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_42/synth/bd_bdc1_m01s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_s00a2s_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_bdc1_s00a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_s00a2s_0' (47#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_bdc1_s00a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_14G9W20' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:3284]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_s00mmu_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_bdc1_s00mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_s00mmu_0' (52#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_bdc1_s00mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_s00sic_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_bdc1_s00sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_s00sic_0' (55#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_bdc1_s00sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_s00tr_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_bdc1_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_s00tr_0' (58#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_bdc1_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_14G9W20' (59#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:3284]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_10R1AQA' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:3943]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_sarn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_bdc1_sarn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_sarn_0' (60#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_bdc1_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_sawn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_bdc1_sawn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_sawn_0' (61#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_bdc1_sawn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_sbn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_bdc1_sbn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_sbn_0' (62#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_bdc1_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_srn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_bdc1_srn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_srn_0' (63#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_bdc1_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_swn_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_bdc1_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_swn_0' (64#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_bdc1_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_10R1AQA' (65#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:3943]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_s01a2s_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_29/synth/bd_bdc1_s01a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_s01a2s_0' (66#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_29/synth/bd_bdc1_s01a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's01_entry_pipeline_imp_2Z48RG' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:4239]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_s01mmu_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_bdc1_s01mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_s01mmu_0' (67#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_bdc1_s01mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_s01sic_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_28/synth/bd_bdc1_s01sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_s01sic_0' (68#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_28/synth/bd_bdc1_s01sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_s01tr_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_27/synth/bd_bdc1_s01tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_s01tr_0' (69#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_27/synth/bd_bdc1_s01tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's01_entry_pipeline_imp_2Z48RG' (70#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:4239]
+INFO: [Synth 8-6157] synthesizing module 's01_nodes_imp_72K5IC' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:4898]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_sarn_1' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_30/synth/bd_bdc1_sarn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_sarn_1' (71#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_30/synth/bd_bdc1_sarn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_sawn_1' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_32/synth/bd_bdc1_sawn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_sawn_1' (72#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_32/synth/bd_bdc1_sawn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_sbn_1' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_34/synth/bd_bdc1_sbn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_sbn_1' (73#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_34/synth/bd_bdc1_sbn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_srn_1' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_31/synth/bd_bdc1_srn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_srn_1' (74#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_31/synth/bd_bdc1_srn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_swn_1' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_33/synth/bd_bdc1_swn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_swn_1' (75#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_33/synth/bd_bdc1_swn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's01_nodes_imp_72K5IC' (76#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:4898]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_1UGH1MU' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:5194]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_arinsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_bdc1_arinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_arinsw_0' (79#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_bdc1_arinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_aroutsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_bdc1_aroutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_aroutsw_0' (80#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_bdc1_aroutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_awinsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_bdc1_awinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_awinsw_0' (81#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_bdc1_awinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_awoutsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_bdc1_awoutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_awoutsw_0' (82#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_bdc1_awoutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_binsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_bdc1_binsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_binsw_0' (83#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_bdc1_binsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_boutsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_bdc1_boutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_boutsw_0' (84#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_bdc1_boutsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_C3VA9Q' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:1785]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_arni_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_bdc1_arni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_arni_0' (91#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_bdc1_arni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_awni_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_bdc1_awni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_awni_0' (94#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_bdc1_awni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_bni_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_bdc1_bni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_bni_0' (95#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_bdc1_bni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_rni_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_bdc1_rni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_rni_0' (96#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_bdc1_rni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_wni_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_bdc1_wni_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8435]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (97#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (98#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8435]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_wni_0' (100#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_bdc1_wni_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_C3VA9Q' (101#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:1785]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_rinsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_bdc1_rinsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_rinsw_0' (102#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_bdc1_rinsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_routsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_bdc1_routsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_routsw_0' (103#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_bdc1_routsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_winsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_bdc1_winsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_winsw_0' (104#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_bdc1_winsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_bdc1_woutsw_0' [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_bdc1_woutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1_woutsw_0' (105#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_bdc1_woutsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_1UGH1MU' (106#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:5194]
+INFO: [Synth 8-6155] done synthesizing module 'bd_bdc1' (107#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/synth/bd_bdc1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ps_dma_ip_smartconnect_0_0' (108#1) [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/synth/ps_dma_ip_smartconnect_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3102.910 ; gain = 378.496 ; free physical = 9161 ; free virtual = 23996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3120.723 ; gain = 396.309 ; free physical = 9250 ; free virtual = 24085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3120.723 ; gain = 396.309 ; free physical = 9250 ; free virtual = 24085
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3187.035 ; gain = 0.000 ; free physical = 8545 ; free virtual = 23220
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_1/bd_bdc1_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_1/bd_bdc1_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_1/bd_bdc1_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.gen/sources_1/bd/ps_dma_ip/ip/ps_dma_ip_smartconnect_0_0/bd_0/ip/ip_1/bd_bdc1_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_smartconnect_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_smartconnect_0_0_synth_1/dont_touch.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ps_dma_ip_smartconnect_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ps_dma_ip_smartconnect_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 60 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3584.785 ; gain = 0.000 ; free physical = 6851 ; free virtual = 21535
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3590.723 ; gain = 5.938 ; free physical = 6813 ; free virtual = 21497
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 12466 ; free virtual = 27150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 12465 ; free virtual = 27149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_smartconnect_0_0_synth_1/dont_touch.xdc, line 243).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_exit_pipeline/m01_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_entry_pipeline/s01_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_entry_pipeline/s01_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_entry_pipeline/s01_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/\gen_normal.inst_si_handler /\gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/\gen_normal.inst_si_handler /\gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 12417 ; free virtual = 27101
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_10_decerr_slave'
+INFO: [Synth 8-802] inferred FSM for state register 'w_state_reg' in module 'sc_si_converter_v1_0_10_axilite_conv'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'sc_si_converter_v1_0_10_axilite_conv'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_10_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                    W_RX |                              001 | 00000000000000000000000000000001
+                    W_TX |                              010 | 00000000000000000000000000000010
+              W_COMPLETE |                              011 | 00000000000000000000000000000100
+               W_RECOVER |                              100 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'w_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_10_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                               00 | 00000000000000000000000000000000
+                    R_RX |                               01 | 00000000000000000000000000000001
+                    R_TX |                               10 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_10_axilite_conv'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 12113 ; free virtual = 26807
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 6     
+	   2 Input   11 Bit       Adders := 8     
+	   4 Input   11 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    7 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 28    
+	   2 Input    3 Bit       Adders := 12    
+	   2 Input    2 Bit       Adders := 10    
+	   3 Input    1 Bit       Adders := 10    
+	   2 Input    1 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 120   
++---Registers : 
+	             2178 Bit    Registers := 4     
+	              512 Bit    Registers := 2     
+	              187 Bit    Registers := 2     
+	              128 Bit    Registers := 4     
+	               75 Bit    Registers := 1     
+	               74 Bit    Registers := 1     
+	               64 Bit    Registers := 8     
+	               47 Bit    Registers := 2     
+	               40 Bit    Registers := 2     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               29 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 8     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 32    
+	                3 Bit    Registers := 84    
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 381   
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 4     
+	   2 Input  172 Bit        Muxes := 6     
+	   2 Input  128 Bit        Muxes := 8     
+	   4 Input  128 Bit        Muxes := 2     
+	   3 Input  128 Bit        Muxes := 4     
+	   2 Input   58 Bit        Muxes := 3     
+	   2 Input   55 Bit        Muxes := 3     
+	   3 Input   40 Bit        Muxes := 2     
+	   2 Input   40 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 5     
+	   2 Input   12 Bit        Muxes := 17    
+	   5 Input   12 Bit        Muxes := 2     
+	   5 Input   11 Bit        Muxes := 2     
+	   3 Input   11 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 12    
+	   2 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 2     
+	   3 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 12    
+	   4 Input    7 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   5 Input    4 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 18    
+	   4 Input    3 Bit        Muxes := 5     
+	   5 Input    3 Bit        Muxes := 2     
+	  11 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 65    
+	   4 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 231   
+	   3 Input    1 Bit        Muxes := 52    
+	   5 Input    1 Bit        Muxes := 54    
+	   4 Input    1 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 5     
+	  12 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 11605 ; free virtual = 26389
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++----------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                             | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++----------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1  | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1  | 
++----------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 15020 ; free virtual = 29817
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14996 ; free virtual = 29793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++----------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                             | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++----------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1  | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1  | 
++----------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14985 ; free virtual = 29782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14961 ; free virtual = 29758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14961 ; free virtual = 29758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14951 ; free virtual = 29749
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14959 ; free virtual = 29756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14960 ; free virtual = 29757
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14960 ; free virtual = 29757
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |   174|
+|2     |LUT2     |   506|
+|3     |LUT3     |   295|
+|4     |LUT4     |   393|
+|5     |LUT5     |   211|
+|6     |LUT6     |   414|
+|7     |RAM16X1D |     2|
+|8     |SRL16    |     1|
+|9     |SRL16E   |     2|
+|10    |FDCE     |   174|
+|11    |FDR      |     4|
+|12    |FDRE     |  1204|
+|13    |FDSE     |    57|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14960 ; free virtual = 29757
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 3590.723 ; gain = 396.309 ; free physical = 14971 ; free virtual = 29768
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 3590.723 ; gain = 866.309 ; free physical = 14969 ; free virtual = 29767
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 3590.723 ; gain = 0.000 ; free physical = 15064 ; free virtual = 29862
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3646.410 ; gain = 0.000 ; free physical = 14972 ; free virtual = 29770
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  FDR => FDRE: 4 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete, checksum: ae8bae24
+INFO: [Common 17-83] Releasing license: Synthesis
+187 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:21 . Memory (MB): peak = 3646.410 ; gain = 1074.816 ; free physical = 15121 ; free virtual = 29919
+INFO: [Common 17-1381] The checkpoint '/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_smartconnect_0_0_synth_1/ps_dma_ip_smartconnect_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ps_dma_ip_smartconnect_0_0, cache-ID = 2175a3bce4da8bd2
+INFO: [Coretcl 2-1174] Renamed 270 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/esoc/Workspace/HJH/project_dma_wrapper/project_dma_wrapper.runs/ps_dma_ip_smartconnect_0_0_synth_1/ps_dma_ip_smartconnect_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ps_dma_ip_smartconnect_0_0_utilization_synth.rpt -pb ps_dma_ip_smartconnect_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 20 18:43:30 2026...

@@ -1,0 +1,15 @@
+# Step1: RTL (.v) → Verilog 모드 (--sv 없음)
+# 'var'가 모듈 이름으로 사용됨 → SV 예약어 충돌 방지
+xvlog -L xilinx_vip -f ./design_list.f
+
+# Step2: VIP 인프라 (.v) → Verilog 모드
+xvlog -L xilinx_vip -f ./testbench_list_v.f
+
+# Step3: VIP + Testbench (.sv) → SystemVerilog 모드
+xvlog --sv -L xilinx_vip -f ./testbench_list.f
+
+# Step4: Elaborate  (TB 모듈명과 반드시 일치해야 함)// -L axi_vip_v1_1_19 -L axi4stream_vip_v1_1_19
+xelab tb_layernorm_axi_wrapper_no_gui -L xilinx_vip -debug all -s tb_layernorm_axi_wrapper_no_gui_sim
+
+# Step5: Simulate
+xsim tb_layernorm_axi_wrapper_no_gui_sim -gui -wdb simulate_xsim.wdb -tclbatch sim.tcl -log simulate.log -protoinst ./protoinst_files/layernorm_sim.protoinst &

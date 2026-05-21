@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Wed May 20 16:16:36 2026
+| Host         : jhnotebook running 64-bit Ubuntu 20.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'layernorm_dma_system_layernorm_axi_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of layernorm_dma_system_layernorm_axi_wrapper_0_0 (xilinx.com:user:layernorm_axi_wrapper:1.0) from (Rev. 2) to (Rev. 3)
+
