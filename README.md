@@ -1,5 +1,6 @@
 # layernorm_HW
-e2e-bert-accel-SW 의 layernorm HW 설계
+e2e-bert-accel-SW 의 layernorm HW 설계  
+[HW 구조/timing diagram /functional description 바로가기](./doc/README_HW.md)
 
 # 파일
 ## add_norm_core : SW-HW mismatch 확인 simulation
