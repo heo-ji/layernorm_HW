@@ -36,7 +36,9 @@ add_norm_core/
 ## Add_Norm_PYNQ : AXI+IP+ PS+DMA 
 - (v1) : local linux  
 - v2 : 145server (board : zcu111)  
-   project_dma_wrapper/project_dma_wrapper.runs/impl_1/ps_dma_ip_wrapper.bit = bitstream위치  
+  **zcu111 AXI data bus = 128로 수정**
+    
+   ./project_dma_wrapper/project_dma_wrapper.runs/impl_1/ps_dma_ip_wrapper.bit = bitstream위치  
   ㄴ project_dma_wrapper : HW_v2.2 기반  
   ㄴ project_dma_wrapper_v2 : HW_v4 기반  
 
