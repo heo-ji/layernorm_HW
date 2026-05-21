@@ -1,8 +1,0 @@
-xvlog -f ./design_list.f -f ./testbench_list.f  
-xelab tb_calculator -debug wave -s  tb_calculator
-xsim tb_calculator -gui -wdb simulatetb_calculator.wdb -tclbatch kim_sim.tcl -log simulate.log
-
-
-#xsim matbi_dma_ip_tb -R  # do not check waveform
-# xsim tb_weight -gui -wdb simulatetb_weight.wdb -tclbatch kim_sim.tcl -log simulate.log -protoinst ./protoinst_files/matbi_sim.protoinst  &
-

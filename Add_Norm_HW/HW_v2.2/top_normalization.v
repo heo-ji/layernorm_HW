@@ -25,10 +25,8 @@ assign o_m_valid = &w_m_valid;
 wire [MODULE_NUM-1:0]   w_o_s_ready;
 assign o_s_ready = &w_o_s_ready;
 
-
 wire [MODULE_NUM-1:0]   w_o_data_last;
 assign o_data_last = &w_o_data_last;
-
 
 genvar i;
 generate 
@@ -39,7 +37,7 @@ generate
 			.i_clk		(	i_clk	 ), 
 			.i_reset		(	i_reset	 ),
 			.i_s_valid	(	i_s_valid),
-			.o_s_ready  (	w_o_s_ready[i]),
+            .o_s_ready  (	w_o_s_ready[i]),
             .o_m_valid  (	w_m_valid[i]),
             .i_m_ready  (	i_m_ready),
             .i_mean	    (   i_mean   [DATA_WIDTH*(i+1)-1 : DATA_WIDTH*i]   	),
@@ -47,7 +45,7 @@ generate
 			.i_data 	(   i_data   [DATA_WIDTH*(i+1)-1 : DATA_WIDTH*i]    ),
 			.o_data	    (   o_data   [DATA_WIDTH*(i+1)-1 : DATA_WIDTH*i]   	),
             .i_data_last (   i_data_last                                     ),
-			.o_data_last (w_o_data_last[i])
+            .o_data_last (w_o_data_last[i])
 		);
     end
 endgenerate
