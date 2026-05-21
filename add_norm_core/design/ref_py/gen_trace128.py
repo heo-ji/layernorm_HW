@@ -5,8 +5,8 @@ NUM_ROWS   = 8      # 128 / 16 = 8 parallel rows
 D_MODEL    = 768
 DATA_WIDTH = 16     # 8.8 fixed-point
 
-VAR_TARGET_MIN = 0.001
-VAR_TARGET_MAX = 0.003
+VAR_TARGET_MIN = 0.5
+VAR_TARGET_MAX = 20
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "../../trace128")
 os.makedirs(OUT_DIR, exist_ok=True)
