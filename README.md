@@ -1,7 +1,18 @@
-# layernorm_HW
-e2e-bert-accel-SW 의 layernorm HW 설계  
-[HW 구조/timing diagram /functional description 바로가기](./doc/README_HW.md)
+# layernorm_HW : e2e-bert-accel-SW 의 layernorm HW 설계  
+HW Spec. :
+[doc/README_HW](./doc/README_HW.md)  
 
+
+# repository folder 설명  
+```
+layernorm_HW
+└── add_norm_core : SW-HW mismatch 확인 simulation  
+└── Add_Norm_HW : HW 버전별 rtl 코드  
+└── Add_Norm_AXI : AXI+IP wrapper 설계하고 AXI-VIP 검증  
+└── Add_Norm_PYNQ : AXI+IP+ PS+DMA   
+└── doc 
+     ├── README_HW : HW 스펙 (HW 구조/timing diagram /functional description)
+```
 # 파일
 ## add_norm_core : SW-HW mismatch 확인 simulation
 ```
