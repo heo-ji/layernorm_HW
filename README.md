@@ -17,7 +17,9 @@ layernorm_HW
 └── Add_Norm_AXI : AXI+IP wrapper 설계하고 AXI-VIP 검증  
 └── Add_Norm_PYNQ : AXI+IP+ PS+DMA   
 └── doc 
-     ├── README_HW : HW 스펙 (HW 구조/timing diagram /functional description)
+     ├── README_HW
+     ├── README_AXI_WRAPPER
+     ├── README_FPGA_overview 
 ```
 ## 파일 상세설명
 ### add_norm_core : SW-HW mismatch 확인 simulation
