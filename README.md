@@ -1,25 +1,15 @@
 # layernorm_HW : e2e-bert-accel-SW 의 layernorm HW 설계  
-**IP core 내용** 
-[doc/README_HW](./doc/README_HW.md)
-```
-1. 모듈 구성 및 2-iteration 동작
-2. 서브모듈 주요 포트
-3. 입력 데이터 버스 크기 및 패킹
-4. 5. IP 파라미터
-6. 타이밍 다이어그램 / HW 구조..등 이미지
-```
 
-**AXI Wrapper (AXI-lite/AXI-stream + IP ) 내용**  
-[doc/README_AXI_WRAPPER](./doc/README_AXI_WRAPPER.md) 
-```
+> **IP 코어 (데이터 포맷, 비트폭, 파라미터) 설명 ==> [`./doc/README_HW.md`](./doc/README_HW.md)**  
 
-```
-**SW model + FPGA 내용** 
-[doc/README_FPGA_SW](./doc/README_FPGA_SW.md) 
+> **AXI wrapper (레지스터 맵, FSM, 제어/데이터전송 시퀀스) 설명 ==> [`./doc/README_AXI_WRAPPER.md`](./doc/README_AXI_WRAPPER.md)** 
+
+> **HIL 환경 overview (Host PC ↔ ZCU111 board ) 설명 ==> [`./doc/README_FPGA_overview.md`](./doc/README_FPGA_overview.md)**
+
+> **HIL 실행 방법/코드 위치 ==>  [`repository [layernorm_FPGA]`](https://github.com/heo-ji/layernorm_FPGA)**
 
 
-
-# repository folder 설명  
+## 디렉토리 구조 
 ```
 layernorm_HW
 └── add_norm_core : SW-HW mismatch 확인 simulation  
@@ -29,8 +19,8 @@ layernorm_HW
 └── doc 
      ├── README_HW : HW 스펙 (HW 구조/timing diagram /functional description)
 ```
-# 파일
-## add_norm_core : SW-HW mismatch 확인 simulation
+## 파일 상세설명
+### add_norm_core : SW-HW mismatch 확인 simulation
 ```
 add_norm_core/
 ├── design/
@@ -43,7 +33,7 @@ add_norm_core/
 │   └── run.py                    ← 전체 실행 + 비교
 └── trace/                        ← 실행 시 자동 생성
 ```
-## Add_Norm_HW : HW 버전별 rtl 코드
+### Add_Norm_HW : HW 버전별 rtl 코드
 (E:\대학원_소스코드\HJH_esocPC\Linux_source\mpw./MPW_2024/Add_Norm 하위 폴더와 동일) 
 
 - HW_(v1)
@@ -85,10 +75,10 @@ add_norm_core/
 
 - HW_v4 : HW_v2.2에서 모든 부분 overflow처리 완료 .  
 
-## Add_Norm_AXI : AXI+IP with AXI-VIP
+### Add_Norm_AXI : AXI+IP with AXI-VIP
 [Add_Norm_AXI readme 바로가기](./Add_Norm_AXI/README.md)
 
-## Add_Norm_PYNQ_v2 : AXI+IP+ PS+DMA 
+### Add_Norm_PYNQ_v2 : AXI+IP+ PS+DMA 
 - (v1) : 'Add_Norm_PYNQ'은 laptop local linux 코드임.  
 - v2 : 145server (board : zcu111)  
   **zcu111 보드용 AXI data bus = 128로 수정**
