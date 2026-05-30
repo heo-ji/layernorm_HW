@@ -14,8 +14,10 @@
 layernorm_HW
 └── add_norm_core : SW-HW mismatch 확인 simulation  
 └── Add_Norm_HW : HW 버전별 rtl 코드  
-└── Add_Norm_AXI : AXI+IP wrapper 설계하고 AXI-VIP 검증  
-└── Add_Norm_PYNQ : AXI+IP+ PS+DMA   
+└── Add_Norm_AXI : AXI+IP wrapper 설계하고 AXI-VIP 검증
+          ├── README : wrapper 시뮬레이션 파일 설명
+└── Add_Norm_PYNQ : AXI+IP+ PS+DMA
+└── README : repository 설명   
 └── doc 
      ├── README_HW
      ├── README_AXI_WRAPPER
