@@ -22,7 +22,7 @@ layernorm_HW
      ├── README_FPGA_overview 
 ```
 ## 파일 상세설명
-### add_norm_core : SW-HW mismatch 확인 simulation
+### 1. add_norm_core : SW-HW mismatch 확인 simulation
 ```
 add_norm_core/
 ├── design/
@@ -35,7 +35,7 @@ add_norm_core/
 │   └── run.py                    ← 전체 실행 + 비교
 └── trace/                        ← 실행 시 자동 생성
 ```
-### Add_Norm_HW : HW 버전별 rtl 코드
+### 2. Add_Norm_HW : HW 버전별 rtl 코드
 (E:\대학원_소스코드\HJH_esocPC\Linux_source\mpw./MPW_2024/Add_Norm 하위 폴더와 동일) 
 
 - HW_(v1)
@@ -77,10 +77,10 @@ add_norm_core/
 
 - HW_v4 : HW_v2.2에서 모든 부분 overflow처리 완료 .  
 
-### Add_Norm_AXI : AXI+IP with AXI-VIP
+### 3. Add_Norm_AXI : AXI+IP with AXI-VIP
 [Add_Norm_AXI readme 바로가기](./Add_Norm_AXI/README.md)
 
-### Add_Norm_PYNQ_v2 : AXI+IP+ PS+DMA 
+### 4. Add_Norm_PYNQ_v2 : AXI+IP+ PS+DMA 
 - (v1) : 'Add_Norm_PYNQ'은 laptop local linux 코드임.  
 - v2 : 145server (board : zcu111)  
   **zcu111 보드용 AXI data bus = 128로 수정**
