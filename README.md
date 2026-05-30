@@ -1,6 +1,22 @@
 # layernorm_HW : e2e-bert-accel-SW 의 layernorm HW 설계  
-HW Spec. :
-[doc/README_HW](./doc/README_HW.md)  
+**IP core 내용** 
+[doc/README_HW](./doc/README_HW.md)
+```
+1. 모듈 구성 및 2-iteration 동작
+2. 서브모듈 주요 포트
+3. 입력 데이터 버스 크기 및 패킹
+4. 5. IP 파라미터
+6. 타이밍 다이어그램 / HW 구조..등 이미지
+```
+
+**AXI Wrapper (AXI-lite/AXI-stream + IP ) 내용**  
+[doc/README_AXI_WRAPPER](./doc/README_AXI_WRAPPER.md) 
+```
+
+```
+**SW model + FPGA 내용** 
+[doc/README_FPGA_SW](./doc/README_FPGA_SW.md) 
+
 
 
 # repository folder 설명  
@@ -72,10 +88,12 @@ add_norm_core/
 ## Add_Norm_AXI : AXI+IP with AXI-VIP
 [Add_Norm_AXI readme 바로가기](./Add_Norm_AXI/README.md)
 
-## Add_Norm_PYNQ : AXI+IP+ PS+DMA 
-- (v1) : local linux  
+## Add_Norm_PYNQ_v2 : AXI+IP+ PS+DMA 
+- (v1) : 'Add_Norm_PYNQ'은 laptop local linux 코드임.  
 - v2 : 145server (board : zcu111)  
-  **zcu111 AXI data bus = 128로 수정**
+  **zcu111 보드용 AXI data bus = 128로 수정**
+    C_S00_AXIS_TDATA_WIDTH : 128 (ZCU111)  /  512 (Alveo U200)
+    MODULE_NUM             :   8 (ZCU111)  /   32 (Alveo U200)
     
    ./project_dma_wrapper/project_dma_wrapper.runs/impl_1/ps_dma_ip_wrapper.bit = bitstream위치  
   ㄴ project_dma_wrapper : HW_v2.2 기반  
