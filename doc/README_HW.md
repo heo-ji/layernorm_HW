@@ -2,7 +2,7 @@
 
 > **AXI wrapper** (레지스터 맵, FSM, 제어 시퀀스) → **[`README_AXI_WRAPPER.md`](README_AXI_WRAPPER.md)** 
 
-> **FPGA이용 SW(pytorch glue task) BERT 모델 실행   / HIL 환경** (Host PC ↔ ZCU111 SW 흐름) → **[`README_FPGA_SW.md`](README_FPGA_SW.md)**
+> **FPGA이용 SW(pytorch glue task) BERT 모델 실행   / HIL 환경** (Host PC ↔ ZCU111 SW 흐름) → **[`README_FPGA_overview.md`](README_FPGA_overview.md)**
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **IP 코어** (모듈 구성, 데이터 포맷, 내부 비트폭) → **[`README_HW.md`](README_HW.md)**  
   
-> **FPGA이용한 SW(pytorch glue task) BERT 모델 실행(HIL 환경)** (Host PC ↔ ZCU111 SW 흐름) → **[`README_FPGA_SW.md`](README_FPGA_SW.md)**
+> **FPGA이용한 SW(pytorch glue task) BERT 모델 실행(HIL 환경)** (Host PC ↔ ZCU111 SW 흐름) → **[`README_FPGA_overview.md`](README_FPGA_overview.md)**
 
 ---
 
@@ -112,7 +112,7 @@ finally:
     out_buf.freebuffer()
 
 ```
-= ps_server.py (PS의 PL제어) 코드의 일부 → [`README_FPGA_SW.md`](README_FPGA_SW.md)
+= ps_server.py (PS의 PL제어) 코드의 일부 → [`README_FPGA_overview.md`](README_FPGA_overview.md)
 
 > **주의사항**  
     1. **.bit랑 .hwh가 같은 폴더& 같은 이름**이어야 PYNQ가 인식함\
@@ -139,6 +139,6 @@ Vivado IP Catalog → layernorm_axi_wrapper → 파라미터 수정
     MODULE_NUM             :   8   →    32 
 → Generate Output Products → Synthesize → Implement → Generate Bitstream
 ```
-+ [`bert모델SW실행 → FPGA → accuracy 확인할때 (HIL환경) `](README_FPGA_SW.md)에서도 \
++ [`bert모델SW실행 → FPGA → accuracy 확인할때 (HIL환경) `](README_FPGA_overview.md)에서도 \
 SW 쪽(`run_custom_transformer_with_hw.py`)의 `--module_num` 인수를 함께 변경해야함  
 
