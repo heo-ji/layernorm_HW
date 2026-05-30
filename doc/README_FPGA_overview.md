@@ -72,22 +72,27 @@ BERT :  [Embedding] → [Attention] → [LayerNorm ← SW golden] → [FFN] → 
 ## 5. 데이터 흐름 요약
 
 ```
-Host PC                        ZCU111 PS               ZCU111 PL
-──────────                     ─────────               ──────────
+Host PC                             ZCU111 PS                ZCU111 PL
+──────────                          ─────────               ──────────
+Bert 모델 forward중 layernorm연산
 float32 텐서
   │
   ├─ int16 변환 (×256)
   ├─ column-first 직렬화
-  │
-  └─ TCP 전송 ──────────────→  int16 수신
-                                DMA 버퍼에 복사
-                                ITER1 (mean/invsqrt) ──→  LayerNorm IP
-                                ITER2 (normalization) ←─  결과 출력
-                                TCP 송신
+  │ 배치1개
+  └─ TCP 전송 ──────────────→       int16 수신
+                                    module_num=8(128bit bus의 경우)단위로 잘라서,
+                                    DMA 버퍼에 복사
+                                    ITER1 (mean/invsqrt) ──→  LayerNorm IP (pooling)
+                                    ITER2 (normalization) 
+                                                          ←─  결과 출력
+                                    
+                                    module_num=8(128bit bus의 경우)단위를 다시 묶어서
+                                    TCP 송신
   TCP 수신
   └─ int16 → float32 (÷256)
   └─ column-first 역직렬화
-  └─ 다음 레이어로
+  └─ 다음 연산/레이어로
 ```
 
 > 데이터 포맷 상세 (column-first 패킹, beat 구조) → [`README_HW.md`](README_HW.md)
