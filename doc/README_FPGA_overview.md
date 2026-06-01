@@ -77,22 +77,23 @@ Host PC                             ZCU111 PS                ZCU111 PL
 Bert 모델 forward중 layernorm연산
 float32 텐서
   │
-  ├─ int16 변환 (×256)
-  ├─ column-first 직렬화
+  ├─ int16 변환 (×256 clip)
   │ 배치1개
-  └─ TCP 전송 ──────────────→       int16 수신
+  └─ TCP 전송 ──────────────→       row-major int16 수신                                 
                                     module_num=8(128bit bus의 경우)단위로 잘라서,
+                                    chunk.T.flatten()로 column-first
                                     DMA 버퍼에 복사
                                     ITER1 (mean/invsqrt) ──→  LayerNorm IP (pooling)
                                     ITER2 (normalization) 
                                                           ←─  결과 출력
-                                    
+                                    reshape → row-major
                                     module_num=8(128bit bus의 경우)단위를 다시 묶어서
                                     TCP 송신
   TCP 수신
+  Batch횟수의 output.append
   └─ int16 → float32 (÷256)
-  └─ column-first 역직렬화
   └─ 다음 연산/레이어로
 ```
+> SW 코드 상세 / 실행 방법* →  [repository [layernorm_FPGA]/README.md 바로가기](https://github.com/heo-ji/layernorm_FPGA)
 
 > 데이터 포맷 상세 (column-first 패킹, beat 구조) → [`README_HW.md`](README_HW.md)
