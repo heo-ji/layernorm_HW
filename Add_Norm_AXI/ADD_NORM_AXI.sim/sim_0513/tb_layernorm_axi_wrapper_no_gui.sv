@@ -1,4 +1,18 @@
 `timescale 1ns/1ps
+/*
+512bit BUS = 32-row(TOKEN) concurrent process
+
+MODEL_DIMENSION=768
+
+/trace folder txt file = [32,768]data가 col-wise로 저장
+
+=512-bit hex x 768 line
+= 한줄에 32개 16bit 데이터
+
+/trace folder/
+    input_file, rtl_norm_file, axi_norm_file  .txt
+
+*/
 
 //─────────────────────────────────────────────
 // ① 패키지 import

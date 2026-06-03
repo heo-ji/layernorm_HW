@@ -46,10 +46,10 @@ begin
     else begin
         if (o_s_ready) begin
             if(i_s_valid) begin
-                o_data <= i_data; //temp pass through : for AXI-wrapper test 
-//                o_data <= w_pos_ovf ? {1'b0, {(DATA_WIDTH-1){1'b1}}} :
-//                        w_neg_ovf ? {1'b1, {(DATA_WIDTH-1){1'b0}}} :
-//                        $signed(w_multiply_invsqrt[DATA_WIDTH+FRAC_WIDTH-1 : FRAC_WIDTH]);
+                //o_data <= i_data; //temp pass through : for AXI-wrapper test 
+                o_data <= w_pos_ovf ? {1'b0, {(DATA_WIDTH-1){1'b1}}} :
+                        w_neg_ovf ? {1'b1, {(DATA_WIDTH-1){1'b0}}} :
+                        $signed(w_multiply_invsqrt[DATA_WIDTH+FRAC_WIDTH-1 : FRAC_WIDTH]);
                 o_m_valid <= 1'b1;
                 o_data_last <= i_data_last;
             end
