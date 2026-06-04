@@ -1,0 +1,1 @@
+"tb_layernorm_axi_wrapper_no_gui" -L "xilinx_vip" -debug "all" -s "tb_layernorm_axi_wrapper_no_gui_sim" 

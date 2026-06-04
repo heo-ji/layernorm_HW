@@ -1,0 +1,10 @@
+# Step1: RTL + VIP + Testbench 전부 SystemVerilog 모드로 컴파일
+# (variance 모듈로 변경되어 SV 예약어 충돌 없음 → 분리 컴파일 불필요)
+xvlog --sv -L xilinx_vip -f ./design_list.f
+xvlog --sv -L xilinx_vip -f ./testbench_list.f
+
+# Step2: Elaborate  (TB 모듈명과 반드시 일치해야 함)
+xelab tb_layernorm_axi_wrapper_no_gui -L xilinx_vip -debug all -s tb_layernorm_axi_wrapper_no_gui_sim
+
+# Step3: Simulate
+xsim tb_layernorm_axi_wrapper_no_gui_sim -gui -wdb simulate_xsim.wdb -tclbatch sim.tcl -log simulate.log -protoinst ./protoinst_files/layernorm_sim.protoinst &
